@@ -1,3 +1,99 @@
+/*Please comment your code!*/
+/*Especially important so people who don't 
+have too much experience understand :)*/
+
 body{
-    background-color:blue;
+	/*Default values for every element of the page*/
+	/*To be overwritten with container and element classes*/
+    background-color:white;
+	font-family: 'Lucida Sans Unicode';
+	font-size:15px;
+	
+	/*This is necessary for the section heights to work correctly*/
+	height: 100%;
+	
+	/*By default, there's some page margin we don't want*/
+	margin: 0;
 }
+
+p{
+	/*To remove alignment errors, paragraphs have no margin
+	by default. This can be adjusted*/
+	margin:0;
+}
+
+section{
+	/*Ensures every section is the height of the window*/
+	height: 100vh;
+	margin:0;
+	
+	/*Default text color if you're inside a section*/
+	/*Normally, no text should be outside a section but we never know*/
+	color:white;
+}
+
+section#home{
+	/*Sets up the background image up top*/
+	background-image: url("assets/img/tempbg.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+/*Every class specific to section home go under here*/
+/*Put non-specific classes above "section{}"*/
+.titlecard{
+	text-align: center;
+	text-shadow: 0px 2px 25px #000000;
+	
+	/*These properties center the div horizontally*/
+	margin: 0 auto;
+    width: 50%;
+
+	/*This centers the div vertically.
+	We're likely not keeping this code though*/
+	position:relative;
+	top:50%;
+	transform: translateY(-50%);
+	
+	/*Ads a transparent background color and rounds the edges*/
+	/*Probably not keepign this either, all of this is just to have a code base*/
+	background-color:rgb(183,254,148,0.5);
+	border-radius: 50px;
+}
+
+.title{
+	font-size:100px;
+	font-weight: bold;
+	margin-bottom:-20px;
+}
+
+.subtitle{
+	font-size:25px;
+	font-style: italic;
+}
+
+section#instructions{
+	background-color: #D6F8FE;
+	color:black;
+	font-size:25px;
+}
+
+section#search{
+	background-color: #FFF4D5;
+	color:black;
+	font-size:25px;
+}
+
+section#contact{
+	background-color: #EBD6FE;
+	color:black;
+	font-size:25px;
+}
+
+footer{
+	background-color: #E5E5E5;
+	height:10vh;
+	color:black;
+	text-align: center;
+}
+
