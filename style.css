@@ -72,6 +72,19 @@ section#home{
 	font-style: italic;
 }
 
+.aboutUsPara{
+	margin-top:500px;
+	margin-left:1000px;
+}
+.whyUs{
+	margin-top:-200px;
+	margin-right:1000px;
+	margin-left: 100px;
+	border-style: outset;
+  	border-color: red;
+	background-color:gold;
+}
+
 section#instructions{
 	background-color: #D6F8FE;
 	color:black;
