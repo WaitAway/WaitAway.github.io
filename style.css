@@ -76,6 +76,13 @@ section#instructions{
 	background-color: #D6F8FE;
 	color:black;
 	font-size:25px;
+	background-image: url("assets/img/bubbles.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+
+	
+	
+	
 }
 
 section#search{
