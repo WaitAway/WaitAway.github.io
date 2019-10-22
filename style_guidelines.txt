@@ -12,6 +12,8 @@ Color Scheme
 
 The overall color scheme is chosen as it is because these colors allow for a mature and simplistic look to the website. While a colder color, blue is usually associated with calmness and thoughtfulness. This is in line with the way we expect customers to use our apps: being well prepared and looking ahead.
 Malibu Blue will be the main blue, currently used on the front page. Currently, this lists a Darker Malibu blue to be used in gradients. This might be removed and implemented with JS or CSS preprocessing.
+We used Adobe Color to help us. Some colors are currently not assigned.
+Most of the website is WIP!
 
 Iconography
 We’re going for simplistic, minimalist icons for our buttons.
@@ -25,4 +27,4 @@ Normal Text: Forum
 
 Clickables
 Links don’t underline, but change color on hover.
-Buttons have flat colors, but gradient on hover.
+Buttons have flat colors.

@@ -121,6 +121,13 @@ section#home{
 }
 
 /*Old class, to be deleted*/
+.title{
+	font-size:100px;
+	font-weight: bold;
+	margin-bottom:-20px;
+}
+
+/*Old class, to be deleted*/
 .subtitle{
 	font-size:25px;
 	font-style: italic;
@@ -128,6 +135,7 @@ section#home{
 
 /*Guy Changes*/  
 .button{
+	font-family: 'Comfortaa';
 	text-align:center;
 	border-radius:50px;
 	background-color:#5A93CC;
@@ -138,7 +146,6 @@ section#home{
 
 #titlebutton{
 	font-size:40px;
-	font-weight: bold;
 	
 	/*This section is a WIP*/
 	position:absolute;
@@ -157,7 +164,7 @@ section#home{
 /*--------------------------------------------------- INSTRUCTIONS ----------------------------*/
 
 section#instructions{
-	background-color: #D6F8FE;
+	background-color: #385C80;
 	
     /*Dharitri's New Code*/
 	background-image: url("assets/img/bubbles.png");
@@ -169,7 +176,7 @@ section#instructions{
 /*--------------------------------------------------- SEARCH ----------------------------*/
 
 section#search{
-	background-color: #FFF4D5;
+	background-color: #BDDEFF;
 }
 
 /*Robert's New Code*/
@@ -190,7 +197,7 @@ section#search{
 /*--------------------------------------------------- CONTACT ----------------------------*/
 
 section#contact{
-	background-color: #EBD6FE;
+	background-color: #5286BA;
 }
 
 /*Parva Changes*/
@@ -204,23 +211,23 @@ section#contact{
 	margin-right:1000px;
 	margin-left: 100px;
 	border-style: outset;
-  	border-color: red;
-	background-color:gold;
+  	border-color: #5E6F80;
+	background-color:#385C80;
 } /*End of changes*/
 
 /*--------------------------------------------------- PRICING ----------------------------*/
 
 /*Amin's New Code*/
 section#pricing{
-	background-color: #93fa93;
+	background-color: #5A93CC;
 }
 /*End of Change*/
 
 /*--------------------------------------------------- FOOTER ----------------------------*/
 
 footer{
-	background-color: #E5E5E5;
+	background-color: #5E6F80;
 	height:7vh;
-	color:black;
+	color:white;
 	text-align: center;
 }
