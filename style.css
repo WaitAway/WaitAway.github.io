@@ -144,13 +144,13 @@ section#instructions{
 	background-color: #D6F8FE;
 	color:black;
 	font-size:25px;
+	
+	
+    /*Dharitri's New Code*/
 	background-image: url("assets/img/bubbles.png");
 	background-repeat:no-repeat;
 	background-size:cover;
-
-	
-	
-	
+	/*End of Change*/
 }
 
 section#search{
