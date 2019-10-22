@@ -114,6 +114,33 @@ section#home{
 	opacity:0;
 }
 
+
+.title{
+	font-size:100px;
+	font-weight: bold;
+	margin-bottom:-20px;
+}
+
+.subtitle{
+	font-size:25px;
+	font-style: italic;
+}
+
+/*Parva Changes*/
+.aboutUsPara{
+	margin-top:500px;
+	margin-left:1000px;
+}
+
+.whyUs{
+	margin-top:-200px;
+	margin-right:1000px;
+	margin-left: 100px;
+	border-style: outset;
+  	border-color: red;
+	background-color:gold;
+/*End of changes*/
+  
 .button{
 	text-align:center;
 	border-radius:50px;
@@ -138,6 +165,7 @@ section#home{
     -webkit-box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
     -o-box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
 	border-radius:50px;
+
 }
 
 section#instructions{
