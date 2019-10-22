@@ -81,6 +81,7 @@ h1{
 	font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 }/*End of Changes*/
 
+
 section{
 	/*Ensures every section is the height of the window*/
 	height: 100vh;
@@ -165,6 +166,21 @@ section#search{
 	background-color: #FFF4D5;
 }
 
+/*Robert's New Code*/
+.g_map{
+	position:relative;
+	text-align:right;
+	height:800px;
+	width:600px;
+}
+.g_map_border{ 	
+	overflow:hidden;
+	background:none!important;
+	height:800px;
+	width:600px;
+}
+/*End of Change*/
+
 section#contact{
 	background-color: #EBD6FE;
 }
@@ -196,4 +212,3 @@ footer{
 	color:black;
 	text-align: center;
 }
-
