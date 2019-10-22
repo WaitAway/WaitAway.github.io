@@ -14,14 +14,6 @@ body{
 	
 	/*By default, there's some page margin we don't want*/
 	margin: 0;
-<<<<<<< HEAD
-}
-
-p{
-	/*To remove alignment errors, paragraphs have no margin
-	by default. This can be adjusted*/
-	margin:0;
-=======
 	
 	/*Before the page is done loading, we don't want the user to be able to scroll*/
 	overflow: hidden;
@@ -85,7 +77,6 @@ a:hover{
 h1{
 	margin:0;
 	font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
->>>>>>> ad55032a7897769b9f3d871a5026c9f25b195d87
 }
 
 section{
@@ -107,37 +98,6 @@ section#home{
 
 /*Every class specific to section home go under here*/
 /*Put non-specific classes above "section{}"*/
-<<<<<<< HEAD
-.titlecard{
-	text-align: center;
-	text-shadow: 0px 2px 25px #000000;
-	
-	/*These properties center the div horizontally*/
-	margin: 0 auto;
-    width: 50%;
-
-	/*This centers the div vertically.
-	We're likely not keeping this code though*/
-	position:relative;
-	top:50%;
-	transform: translateY(-50%);
-	
-	/*Ads a transparent background color and rounds the edges*/
-	/*Probably not keepign this either, all of this is just to have a code base*/
-	background-color:rgb(183,254,148,0.5);
-	border-radius: 50px;
-}
-
-.title{
-	font-size:100px;
-	font-weight: bold;
-	margin-bottom:-20px;
-}
-
-.subtitle{
-	font-size:25px;
-	font-style: italic;
-=======
 #title{
 	font-size:100px;
 	font-weight: bold;
@@ -178,23 +138,26 @@ section#home{
     -webkit-box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
     -o-box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
 	border-radius:50px;
->>>>>>> ad55032a7897769b9f3d871a5026c9f25b195d87
 }
 
 section#instructions{
 	background-color: #D6F8FE;
 	color:black;
 	font-size:25px;
-<<<<<<< HEAD
-=======
+
 	background-image: url("assets/img/bubbles.png");
 	background-repeat:no-repeat;
 	background-size:cover;
 
 	
+
 	
-	
->>>>>>> ad55032a7897769b9f3d871a5026c9f25b195d87
+    /*Dharitri's New Code*/
+	background-image: url("assets/img/bubbles.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+	/*End of Change*/
+
 }
 
 section#search{
@@ -215,19 +178,3 @@ footer{
 	color:black;
 	text-align: center;
 }
-<<<<<<< HEAD
-.g_map{
-	position:relative;
-	text-align:right;
-	height:800px;
-	width:600px;
-}
-.g_map_border{ 	
-	overflow:hidden;
-	background:none!important;
-	height:800px;
-	width:600px;
-}
-=======
-
->>>>>>> ad55032a7897769b9f3d871a5026c9f25b195d87
