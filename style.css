@@ -79,12 +79,8 @@ a:hover{
 h1{
 	margin:0;
 	font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
-<<<<<<< HEAD
-}
-=======
 }/*End of Changes*/
 
->>>>>>> 6f710c8af2c1381147455474c75bcd3fb83a5a66
 
 section{
 	/*Ensures every section is the height of the window*/
@@ -96,6 +92,8 @@ section{
 	color:white;
 	font-size:25px;
 }
+
+/*--------------------------------------------------- HOME ----------------------------*/
 
 section#home{
 	/*Sets up the background image up top*/
@@ -156,31 +154,19 @@ section#home{
 }
 /*End of Changes*/
 
+/*--------------------------------------------------- INSTRUCTIONS ----------------------------*/
+
 section#instructions{
 	background-color: #D6F8FE;
-<<<<<<< HEAD
-	color:black;
-	font-size:25px;
-
-	background-image: url("assets/img/bubbles.png");
-	background-repeat:no-repeat;
-	background-size:cover;
-
-	
-
-=======
->>>>>>> 6f710c8af2c1381147455474c75bcd3fb83a5a66
 	
     /*Dharitri's New Code*/
 	background-image: url("assets/img/bubbles.png");
 	background-repeat:no-repeat;
 	background-size:cover;
 	/*End of Change*/
-<<<<<<< HEAD
-
-=======
->>>>>>> 6f710c8af2c1381147455474c75bcd3fb83a5a66
 }
+
+/*--------------------------------------------------- SEARCH ----------------------------*/
 
 section#search{
 	background-color: #FFF4D5;
@@ -195,19 +181,10 @@ section#contact{
 
 =======
 /*Robert's New Code*/
-.g_map{
-	position:relative;
-	text-align:right;
-	height:800px;
-	width:600px;
-}
-.g_map_border{ 	
-	overflow:hidden;
-	background:none!important;
-	height:800px;
-	width:600px;
-}
+
 /*End of Change*/
+
+/*--------------------------------------------------- CONTACT ----------------------------*/
 
 section#contact{
 	background-color: #EBD6FE;
@@ -228,16 +205,23 @@ section#contact{
 	background-color:gold;
 } /*End of changes*/
 
+/*--------------------------------------------------- PRICING ----------------------------*/
+
 /*Amin's New Code*/
 section#pricing{
 	background-color: #93fa93;
 }
 /*End of Change*/
 
+<<<<<<< HEAD
 >>>>>>> 6f710c8af2c1381147455474c75bcd3fb83a5a66
+=======
+/*--------------------------------------------------- FOOTER ----------------------------*/
+
+>>>>>>> fa40024ab368d9797cd59b8b884d13bfaa91d2f1
 footer{
 	background-color: #E5E5E5;
-	height:10vh;
+	height:7vh;
 	color:black;
 	text-align: center;
 }
