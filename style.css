@@ -93,6 +93,8 @@ section{
 	font-size:25px;
 }
 
+/*--------------------------------------------------- HOME ----------------------------*/
+
 section#home{
 	/*Sets up the background image up top*/
 	background-image: url("assets/img/tempbg.png");
@@ -152,6 +154,8 @@ section#home{
 }
 /*End of Changes*/
 
+/*--------------------------------------------------- INSTRUCTIONS ----------------------------*/
+
 section#instructions{
 	background-color: #D6F8FE;
 	
@@ -161,6 +165,8 @@ section#instructions{
 	background-size:cover;
 	/*End of Change*/
 }
+
+/*--------------------------------------------------- SEARCH ----------------------------*/
 
 section#search{
 	background-color: #FFF4D5;
@@ -181,6 +187,8 @@ section#search{
 }
 /*End of Change*/
 
+/*--------------------------------------------------- CONTACT ----------------------------*/
+
 section#contact{
 	background-color: #EBD6FE;
 }
@@ -200,15 +208,19 @@ section#contact{
 	background-color:gold;
 } /*End of changes*/
 
+/*--------------------------------------------------- PRICING ----------------------------*/
+
 /*Amin's New Code*/
 section#pricing{
 	background-color: #93fa93;
 }
 /*End of Change*/
 
+/*--------------------------------------------------- FOOTER ----------------------------*/
+
 footer{
 	background-color: #E5E5E5;
-	height:10vh;
+	height:7vh;
 	color:black;
 	text-align: center;
 }
