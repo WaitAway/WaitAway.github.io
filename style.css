@@ -180,8 +180,27 @@ section#contact{
 }
 
 =======
-/*Robert's New Code*/
+/*Robert's New Code
+.input input[type=text] {
+	position:absolute;
+	top: 50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	background:#70B8FF ;
+	height:40px;
+	border-radius: 40px;
+	padding:10px;
+	border: 1px solid #ccc;
+  }
+.search-btn{
+	float:right;
+	height: 40px;
+	width:40px;
+	border-radius: 50%;
+	background:#5A93CC;
+	display:flex;
 
+}
 /*End of Change*/
 
 /*--------------------------------------------------- CONTACT ----------------------------*/
