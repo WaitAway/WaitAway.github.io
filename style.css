@@ -16,9 +16,11 @@ body{
 	margin: 0;
 	
 	/*Before the page is done loading, we don't want the user to be able to scroll*/
+	/*Change: Guy*/
 	overflow: hidden;
 }
 
+/*Guy Changes*/
 /*Comments here coming soon!*/
 #loadbg {
    width: 100%;
@@ -77,16 +79,17 @@ a:hover{
 h1{
 	margin:0;
 	font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
-}
+}/*End of Changes*/
 
 section{
 	/*Ensures every section is the height of the window*/
 	height: 100vh;
 	margin:0;
 	
-	/*Default text color if you're inside a section*/
+	/*Default text attributes if you're inside a section*/
 	/*Normally, no text should be outside a section but we never know*/
 	color:white;
+	font-size:25px;
 }
 
 section#home{
@@ -106,41 +109,21 @@ section#home{
 	/*Aligns the title.*/
 	/*This section is a WIP*/
 	position:absolute;
-	top:11%;
-	left:51.5%;
+	top:13.5%;
+	left:51%;
 	transform: translateX(-50%);
 	
 	/*Opacity gets animated*/
 	opacity:0;
 }
 
-
-.title{
-	font-size:100px;
-	font-weight: bold;
-	margin-bottom:-20px;
-}
-
+/*Old class, to be deleted*/
 .subtitle{
 	font-size:25px;
 	font-style: italic;
 }
 
-/*Parva Changes*/
-.aboutUsPara{
-	margin-top:500px;
-	margin-left:1000px;
-}
-
-.whyUs{
-	margin-top:-200px;
-	margin-right:1000px;
-	margin-left: 100px;
-	border-style: outset;
-  	border-color: red;
-	background-color:gold;
-/*End of changes*/
-  
+/*Guy Changes*/  
 .button{
 	text-align:center;
 	border-radius:50px;
@@ -165,14 +148,11 @@ section#home{
     -webkit-box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
     -o-box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
 	border-radius:50px;
-
 }
+/*End of Changes*/
 
 section#instructions{
 	background-color: #D6F8FE;
-	color:black;
-	font-size:25px;
-	
 	
     /*Dharitri's New Code*/
 	background-image: url("assets/img/bubbles.png");
@@ -183,15 +163,32 @@ section#instructions{
 
 section#search{
 	background-color: #FFF4D5;
-	color:black;
-	font-size:25px;
 }
 
 section#contact{
 	background-color: #EBD6FE;
-	color:black;
-	font-size:25px;
 }
+
+/*Parva Changes*/
+.aboutUsPara{
+	margin-top:500px;
+	margin-left:1000px;
+}
+
+.whyUs{
+	margin-top:-200px;
+	margin-right:1000px;
+	margin-left: 100px;
+	border-style: outset;
+  	border-color: red;
+	background-color:gold;
+} /*End of changes*/
+
+/*Amin's New Code*/
+section#pricing{
+	background-color: #93fa93;
+}
+/*End of Change*/
 
 footer{
 	background-color: #E5E5E5;
