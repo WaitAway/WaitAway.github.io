@@ -7,15 +7,24 @@
 		
 		<!-- Links (Style&Favicon)-->
 		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Forum&display=swap" rel="stylesheet"> 
 		<link rel="icon" href="assets/img/favicon.ico">
+
+		<!-- JavaScript & JQuery-->
+		<script src="jquery-3.4.1.min.js"></script> <!--Currently doesn't work, to be fixed-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="main.js"></script> 
 	</head>
 	
-	<body>
+	<body onload="">
+		<div id="loadbg"></div>
+		<div id="spinbox">
+				<img id="spinner" src="assets/img/logo.png" alt="Loading..." />
+		</div>
+		
 		<section id="home">
-			<div class="titlecard">
-				<p class="title">WaitAway</p>
-				<p class="subtitle">SubPage 1</p>
-			</div>
+			<h1 id="title">WAIT&nbsp&nbsp&nbspAWAY</h1>
+			<a id="titlebutton" href="#instructions"><div class="button">GET&nbspSTARTED</div></a>
 		</section>
 		<!---Set by step on setting up appointment -->
 		<section id="instructions">
