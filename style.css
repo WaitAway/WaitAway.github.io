@@ -121,13 +121,6 @@ section#home{
 }
 
 /*Old class, to be deleted*/
-.title{
-	font-size:100px;
-	font-weight: bold;
-	margin-bottom:-20px;
-}
-
-/*Old class, to be deleted*/
 .subtitle{
 	font-size:25px;
 	font-style: italic;
@@ -135,7 +128,6 @@ section#home{
 
 /*Guy Changes*/  
 .button{
-	font-family: 'Comfortaa';
 	text-align:center;
 	border-radius:50px;
 	background-color:#5A93CC;
@@ -146,6 +138,7 @@ section#home{
 
 #titlebutton{
 	font-size:40px;
+	font-weight: bold;
 	
 	/*This section is a WIP*/
 	position:absolute;
@@ -164,7 +157,7 @@ section#home{
 /*--------------------------------------------------- INSTRUCTIONS ----------------------------*/
 
 section#instructions{
-	background-color: #385C80;
+	background-color: #D6F8FE;
 	
     /*Dharitri's New Code*/
 	background-image: url("assets/img/bubbles.png");
@@ -176,44 +169,35 @@ section#instructions{
 /*--------------------------------------------------- SEARCH ----------------------------*/
 
 section#search{
-	background-color: #BDDEFF;
+	background-color: #FFF4D5;
 }
 
-<<<<<<< HEAD
+ HEAD
 section#contact{
 	background-color: #EBD6FE;
 	color:black;
 	font-size:25px;
 }
 
-=======
-/*Robert's New Code
-.input input[type=text] {
-	position:absolute;
-	top: 50%;
-	left:50%;
-	transform:translate(-50%,-50%);
-	background:#70B8FF ;
-	height:40px;
-	border-radius: 40px;
-	padding:10px;
-	border: 1px solid #ccc;
-  }
-.search-btn{
-	float:right;
-	height: 40px;
-	width:40px;
-	border-radius: 50%;
-	background:#5A93CC;
-	display:flex;
+/*Robert's New Code*/
+.search_input{
+	border-radius: 10px;
+	height:35px;
+	left:50px;
+	bottom:1px;
 
+
+	position: absolute;
 }
+    
+
+
 /*End of Change*/
 
 /*--------------------------------------------------- CONTACT ----------------------------*/
 
 section#contact{
-	background-color: #5286BA;
+	background-color: #EBD6FE;
 }
 
 /*Parva Changes*/
@@ -227,27 +211,25 @@ section#contact{
 	margin-right:1000px;
 	margin-left: 100px;
 	border-style: outset;
-  	border-color: #5E6F80;
-	background-color:#385C80;
+  	border-color: red;
+	background-color:gold;
 } /*End of changes*/
 
 /*--------------------------------------------------- PRICING ----------------------------*/
 
 /*Amin's New Code*/
 section#pricing{
-	background-color: #5A93CC;
+	background-color: #93fa93;
 }
 /*End of Change*/
 
-<<<<<<< HEAD
->>>>>>> 6f710c8af2c1381147455474c75bcd3fb83a5a66
-=======
+
 /*--------------------------------------------------- FOOTER ----------------------------*/
 
->>>>>>> fa40024ab368d9797cd59b8b884d13bfaa91d2f1
+
 footer{
-	background-color: #5E6F80;
+	background-color: #E5E5E5;
 	height:7vh;
-	color:white;
+	color:black;
 	text-align: center;
 }
