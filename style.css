@@ -14,22 +14,83 @@ body{
 	
 	/*By default, there's some page margin we don't want*/
 	margin: 0;
+	
+	/*Before the page is done loading, we don't want the user to be able to scroll*/
+	/*Change: Guy*/
+	overflow: hidden;
 }
 
-p{
+/*Guy Changes*/
+/*Comments here coming soon!*/
+#loadbg {
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   position: fixed;
+   display: block;
+   background-color: #fff;
+   z-index: 1;
+}
+
+/*Comments here coming soon!*/
+#spinbox {
+	background-image: linear-gradient(#70B8FF, #5286ba);
+	border-radius:50%;
+	width:200px;
+	height:200px;
+	position:absolute;
+	top:50%;
+	margin-top:-100px;
+	left:50%;
+	margin-left:-100px;
+    z-index: 2;
+	
+	opacity:1;
+}
+
+/*Comments here coming soon!*/
+#spinner{
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-top:-45px;
+  margin-left:-45px;
+  max-height:90px;
+}
+
+a, p{
 	/*To remove alignment errors, paragraphs have no margin
 	by default. This can be adjusted*/
 	margin:0;
+	
+	font-family: 'Forum', cursive;
+	color:white;
 }
+
+a{
+	text-decoration:none;
+}
+
+a:hover{
+	color:#385C80;
+}
+
+h1{
+	margin:0;
+	font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+}/*End of Changes*/
+
 
 section{
 	/*Ensures every section is the height of the window*/
 	height: 100vh;
 	margin:0;
 	
-	/*Default text color if you're inside a section*/
+	/*Default text attributes if you're inside a section*/
 	/*Normally, no text should be outside a section but we never know*/
 	color:white;
+	font-size:25px;
 }
 
 section#home{
@@ -41,61 +102,71 @@ section#home{
 
 /*Every class specific to section home go under here*/
 /*Put non-specific classes above "section{}"*/
-.titlecard{
-	text-align: center;
-	text-shadow: 0px 2px 25px #000000;
-	
-	/*These properties center the div horizontally*/
-	margin: 0 auto;
-    width: 50%;
-
-	/*This centers the div vertically.
-	We're likely not keeping this code though*/
-	position:relative;
-	top:50%;
-	transform: translateY(-50%);
-	
-	/*Ads a transparent background color and rounds the edges*/
-	/*Probably not keepign this either, all of this is just to have a code base*/
-	background-color:rgb(183,254,148,0.5);
-	border-radius: 50px;
-}
-
-.title{
+#title{
 	font-size:100px;
 	font-weight: bold;
-	margin-bottom:-20px;
+	/*text-shadow: 0px 2px 25px #000000;*/
+
+	/*Aligns the title.*/
+	/*This section is a WIP*/
+	position:absolute;
+	top:13.5%;
+	left:51%;
+	transform: translateX(-50%);
+	
+	/*Opacity gets animated*/
+	opacity:0;
 }
 
+/*Old class, to be deleted*/
 .subtitle{
 	font-size:25px;
 	font-style: italic;
 }
 
+/*Guy Changes*/  
+.button{
+	text-align:center;
+	border-radius:50px;
+	background-color:#5A93CC;
+	max-width:500px;
+	
+	padding: 10px 50px;
+}
+
+#titlebutton{
+	font-size:40px;
+	font-weight: bold;
+	
+	/*This section is a WIP*/
+	position:absolute;
+	top:60%;
+	left:51.5%;
+	transform: translateX(-50%);
+	
+	box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
+    -o-box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
+	border-radius:50px;
+}
+/*End of Changes*/
+
 section#instructions{
 	background-color: #D6F8FE;
-	color:black;
-	font-size:25px;
+	
+    /*Dharitri's New Code*/
+	background-image: url("assets/img/bubbles.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+	/*End of Change*/
 }
 
 section#search{
 	background-color: #FFF4D5;
-	color:black;
-	font-size:25px;
 }
 
-section#contact{
-	background-color: #EBD6FE;
-	color:black;
-	font-size:25px;
-}
-
-footer{
-	background-color: #E5E5E5;
-	height:10vh;
-	color:black;
-	text-align: center;
-}
+/*Robert's New Code*/
 .g_map{
 	position:relative;
 	text-align:right;
@@ -107,4 +178,37 @@ footer{
 	background:none!important;
 	height:800px;
 	width:600px;
+}
+/*End of Change*/
+
+section#contact{
+	background-color: #EBD6FE;
+}
+
+/*Parva Changes*/
+.aboutUsPara{
+	margin-top:500px;
+	margin-left:1000px;
+}
+
+.whyUs{
+	margin-top:-200px;
+	margin-right:1000px;
+	margin-left: 100px;
+	border-style: outset;
+  	border-color: red;
+	background-color:gold;
+} /*End of changes*/
+
+/*Amin's New Code*/
+section#pricing{
+	background-color: #93fa93;
+}
+/*End of Change*/
+
+footer{
+	background-color: #E5E5E5;
+	height:10vh;
+	color:black;
+	text-align: center;
 }

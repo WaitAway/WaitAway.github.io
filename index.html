@@ -7,23 +7,36 @@
 		
 		<!-- Links (Style&Favicon)-->
 		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Forum&display=swap" rel="stylesheet"> 
 		<link rel="icon" href="assets/img/favicon.ico">
-		<script src = "main.js" type = "text/javascript"></script>
+
+		<!-- JavaScript & JQuery-->
+		<script src="jquery-3.4.1.min.js"></script> <!--Currently doesn't work, to be fixed-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="main.js"></script> 
 	</head>
 	
-	<body>
-		<section id="home">
-			<div class="titlecard">
-				<p class="title">WaitAway</p>
-				<p class="subtitle">SubPage 1</p>
-			</div>
-		</section>
-		<!---Set by step on setting up appointment -->
-		<section id="instructions">
-			Subpage 2
-		</section>
+	<body onload="">
+		<div id="loadbg"></div>
+		<div id="spinbox">
+				<img id="spinner" src="assets/img/logo.png" alt="Loading..." />
+		</div>
 		
-		<!---SUBPAGE 3-->
+		<!---Guy's New Code -->
+		<section id="home">
+			<h1 id="title">WAIT&nbsp&nbsp&nbspAWAY</h1>
+			<a id="titlebutton" href="#instructions"><div class="button">GET&nbspSTARTED</div></a>
+		</section>
+		<!---End of Changes -->
+		
+		<!---Dharitri's New Code -->
+		<section id="instructions">
+			<p class="subtitle">SET UP YOUR FIRST APPOINTMENT IN TWO MINUTES</p> 
+			<h2>Instructions</h2>
+		</section>
+		<!---End of Changes -->
+		
+		<!---Robert's New Code -->
 		<section id="search">
 			<div class="g_map">
 				<div class="g_map_border">
@@ -31,11 +44,27 @@
 						</div>
 							</div>
 		</section>
+		<!---End of Changes -->
 		
+		<!---Parva's New Code -->
 		<section id="contact">
 			Subpage 4
+			<center> <p class="title"> About Us </p> </center>
+			<p class="aboutUsPara"> We are 5 students from The University of Ottawa and we have decided to solve an issue plaguing us and the rest of Canada for years,waiting in clinics. The average wait time for walkin clinics are [Time], there are better things you can do with that time, instead of waiting at a clinic, you can do some shopping, get food etc. We have designed an app that works with your clinic to put you in a virtual waiting room instead of a real one while displaying an accurate wait time so you can do what's important, it is called WaitAway.
+ 			</p>
+			<p class="whyUs">
+			Why Us <br> <br>
+			When looking online we found many waiting room apps but all of them had one main thing in common, they were for restaurants. This is what makes us different we have a great idea that clearly works, as seen by the saturation of the restaurant market, but we are going into a market with no other competition.
+			</p>
 		</section>
+		<!--End of Changes-->
 		
+		<!---Amin's New Code -->
+		<section id="pricing">
+			Subpage 5
+		</section>
+		<!--End of Changes-->
+    
 		<footer>
 			<div class="text-center">
 				<br>Footer stuff

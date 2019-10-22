@@ -1,0 +1,28 @@
+﻿Design Language for WaitAway
+
+
+Color Scheme
+* Chambray Blue #385C80 (link hover)
+* French Pass Blue #BDDEFF
+* Malibu Blue #70B8FF (main)
+* Darker Malibu Blue #5286BA (gradient)
+* Shuttle Gray #5E6F80
+* Danube Blue #5A93CC (buttons)
+
+
+The overall color scheme is chosen as it is because these colors allow for a mature and simplistic look to the website. While a colder color, blue is usually associated with calmness and thoughtfulness. This is in line with the way we expect customers to use our apps: being well prepared and looking ahead.
+Malibu Blue will be the main blue, currently used on the front page. Currently, this lists a Darker Malibu blue to be used in gradients. This might be removed and implemented with JS or CSS preprocessing.
+
+Iconography
+We’re going for simplistic, minimalist icons for our buttons.
+
+
+Typography
+Navigation: Comfortaa
+Important: Arial Black
+Normal Text: Forum
+
+
+Clickables
+Links don’t underline, but change color on hover.
+Buttons have flat colors, but gradient on hover.
