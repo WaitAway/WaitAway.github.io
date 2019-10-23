@@ -180,18 +180,7 @@ section#search{
 }
 
 /*Robert's New Code*/
-.g_map{
-	position:relative;
-	text-align:right;
-	height:800px;
-	width:600px;
-}
-.g_map_border{ 	
-	overflow:hidden;
-	background:none!important;
-	height:800px;
-	width:600px;
-}
+
 /*End of Change*/
 
 /*--------------------------------------------------- CONTACT ----------------------------*/
