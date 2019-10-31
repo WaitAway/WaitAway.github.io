@@ -60,11 +60,67 @@
 
 		<!---Robert's New Code -->
 		<section id="search">
-			<input type ="text" class ="searchbox" name ="name"  placeholder="Search">
+			<input type ="search" class ="searchbox" name ="name"  placeholder="Search">
 
 		<div class="mapouter">
 			<div class="gmap_canvas">
 				<iframe width="600" height="600" id="gmap_canvas" src="https://maps.google.com/maps?q=university%20of%20ottawa&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+			</div>
+		</div>
+		
+		<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Register for FREE</button>
+
+	<div id="id01" class="modal">
+  		<form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      
+    </div>
+
+    <div class="container">
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Enter name" name="name" required>
+
+      <label for="psw"><b>Last Name</b></label>
+      <input type="text" placeholder="Enter Last name" name="psw" required>
+      
+      <label for="psw"><b>Email</b></label>
+      <input type="text" placeholder="Email" name="psw" required>
+      
+      <label for="celphone"><b>Cellphone</b></label>
+      <input type="text" placeholder="Phone number" name="Phone number" required>
+
+	  <button type="submit" class = "register">Register</button>
+	
+      <label><input type="checkbox" checked="checked" name="remember"> Send alert notification </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+  
+    </div>
+  </form>
+</div>
+
+<div class="jumbotron jumbotron-fluid"> 
+        <div class="container"> 
+            <h1 style="color:green;"> GeeksforGeeks </h1>   
+            <p>A computer science portal for geeks</p> 
+        </div> 
+    </div> 
+      
+    <p>Text content outside the jumbotron</p> 
+
+<script>
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 
 
 		

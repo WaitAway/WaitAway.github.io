@@ -167,123 +167,11 @@ section#instructions{
 	background-color: #385C80;
 	
     /*Dharitri's New Code*/
+	background-image: url("assets/img/bubbles.png");
+	background-repeat:no-repeat;
+	background-size:cover;
 	/*End of Change*/
 }
-
-.subtitle{
-	font-size:55px;
-	text-align: center;
-}
-.circle1 {
-    position: absolute;
-    display: inline-block;
-    width: 100%;
-    height: 0;
-    padding: 50% 0%;
-    border-radius: 50%;
-    background: #000;
-    color: white;
-    font-family: "josefin sans", Arial Black, sans;
-    font-size: 20px;
-    text-align: center;
-   }
-   .circle1-text {
-	display: table-cell;
-	height: 200px; /*change this and the width
-	for the size of your initial circle*/
-	width: 200px;
-	text-align: center;
-	vertical-align: middle;
-	border-radius: 50%;
-	/*make it pretty*/
-	background: #000;
-	color: #fff;
-	font: 18px "josefin sans", arial; /*change this
-	for font-size and font-family*/
-	}
- 	
-
-	.circle2 {
-		position: absolute;
-		display: inline-block;
-		width: 100%;
-		height: 0;
-		padding: 50% 0%;
-		border-radius: 50%;
-		background: #000;
-		color: white;
-		font-family: "josefin sans", Arial Black, sans;
-		font-size: 20px;
-		text-align: center;
-	   }
-	   .circle2-text {
-		display: table-cell;
-		height: 200px; /*change this and the width
-		for the size of your initial circle*/
-		width: 200px;
-		text-align: center;
-		vertical-align: middle;
-		border-radius: 50%;
-		/*make it pretty*/
-		background: #000;
-		color: #fff;
-		font: 18px "josefin sans", arial; /*change this
-		for font-size and font-family*/
-		}
-		.circle3 {
-			position: absolute;
-			display: inline-block;
-			width: 100%;
-			height: 0;
-			padding: 50% 0%;
-			border-radius: 50%;
-			background: #000;
-			color: white;
-			font-family: "josefin sans", Arial Black, sans;
-			font-size: 20px;
-			text-align: center;
-		   }
-		   .circle3-text {
-			display: table-cell;
-			height: 200px; /*change this and the width
-			for the size of your initial circle*/
-			width: 200px;
-			text-align: center;
-			vertical-align: middle;
-			border-radius: 50%;
-			/*make it pretty*/
-			background: #000;
-			color: #fff;
-			font: 18px "josefin sans", arial; /*change this
-			for font-size and font-family*/
-			}
-			.circle4 {
-				position: absolute;
-				display: inline-block;
-				width: 100%;
-				height: 0;
-				padding: 50% 0%;
-				border-radius: 50%;
-				background: #000;
-				color: white;
-				font-family: "josefin sans", Arial Black, sans;
-				font-size: 20px;
-				text-align: center;
-			   }
-			   .circle4-text {
-				display: table-cell;
-				height: 200px; /*change this and the width
-				for the size of your initial circle*/
-				width: 200px;
-				text-align: center;
-				vertical-align: middle;
-				border-radius: 50%;
-				/*make it pretty*/
-				background: #000;
-				color: #fff;
-				font: 18px "josefin sans", arial; /*change this
-				for font-size and font-family*/
-				}
 
 /*--------------------------------------------------- SEARCH ----------------------------*/
 
@@ -319,7 +207,7 @@ section#search{
 	transform: translate(-30%,-30%);
 }
 
-.searchbox{
+.searchbox 	{
 	position: relative;
 	left:10%;
 	top:10%;
@@ -333,14 +221,11 @@ section#search{
 	-webkit-transition: width 250ms;
 	transition: width 250ms;
 	font-size: 18px;
-	line-height: 18px;
-	
+	line-height: 18px;	
 	color: #000000;
 	background-color: transparent;
-
 /*Search icon taken from mihaeltomic*/
-background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
-
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
 	background-repeat: no-repeat;
 	background-size: 18px 18px;
 	background-position: 95% center;
@@ -377,7 +262,131 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.
 	font-weight: 900;
 	color:white;
 }
-    
+input[type=text]{
+	position:relative;
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+  }
+ 
+  /* Set a style for all buttons */
+  .register{
+  background-color:blue;
+  }
+  button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+  }
+  .registration{
+	  position:relative;
+	  left:200px;
+	  transition-duration: 0.3s;
+	  transition:0.3 ease-in-out;
+  }
+  
+  button:hover {
+	opacity: 0.8;
+	transition: box-shadow 0.2s east ease-in-out;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+	position: relative;
+  }
+  
+  .container {
+	padding: 16px;
+  }
+  
+  span.psw {
+	float: right;
+	padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 3; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+	background-color: #fefefe;
+	margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+	position: absolute;
+	right: 25px;
+	top: 0;
+	color: #000;
+	font-size: 35px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: red;
+	cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+	from {-webkit-transform: scale(0)} 
+	to {-webkit-transform: scale(1)}
+  }
+	
+  @keyframes animatezoom {
+	from {transform: scale(0)} 
+	to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+	span.psw {
+	   display: block;
+	   float: none;
+	}
+	.cancelbtn {
+	   width: 100%;
+	}
+  }
+
 
 /*End of Change*/
 
