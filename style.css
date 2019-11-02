@@ -176,29 +176,14 @@ section#instructions{
 /*--------------------------------------------------- SEARCH ----------------------------*/
 
 section#search{
-	background-image:url("assets/img/Search.jpg");
+	background-color:none;
 	background-repeat: no-repeat;
 	background-size:cover;
 }
 
 /*Robert's New Code*/
 
-.mapouter{
-	position: relative;
-	text-align:right;
-	left:850px;
-	top:20px;
-	height:600px;
-	width:600px;
-}
 
-.gmap_canvas {
-	overflow:hidden;
-	background:none!important;
-	height:600px;
-	width:600px;
-	border-radius: 40px;
-}
 
 
 #search h1{
@@ -209,9 +194,9 @@ section#search{
 
 .searchbox 	{
 	position: relative;
-	left:10%;
-	top:10%;
-	transform: translate(-10%,-10%);
+	left:5%;
+	bottom:1%;
+	transform: translate(-5%,-1%);
 	place-content: white;
 	width: 20%;
 	padding: 12px 24px;
@@ -262,133 +247,223 @@ section#search{
 	font-weight: 900;
 	color:white;
 }
-input[type=text]{
-	position:relative;
-	width: 100%;
-	padding: 12px 20px;
-	margin: 8px 0;
-	display: inline-block;
-	border: 1px solid #ccc;
-	box-sizing: border-box;
-  }
- 
-  /* Set a style for all buttons */
-  .register{
-  background-color:blue;
-  }
-  button {
-	background-color: #4CAF50;
-	color: white;
-	padding: 14px 20px;
-	margin: 8px 0;
-	border: none;
-	cursor: pointer;
-	width: 100%;
-  }
-  .registration{
-	  position:relative;
-	  left:200px;
-	  transition-duration: 0.3s;
-	  transition:0.3 ease-in-out;
-  }
-  
-  button:hover {
-	opacity: 0.8;
-	transition: box-shadow 0.2s east ease-in-out;
-	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-  }
-  
-  /* Extra styles for the cancel button */
-  .cancelbtn {
-	width: auto;
-	padding: 10px 18px;
-	background-color: #f44336;
-  }
-  
-  /* Center the image and position the close button */
-  .imgcontainer {
-	text-align: center;
-	margin: 24px 0 12px 0;
-	position: relative;
-  }
-  
-  .container {
-	padding: 16px;
-  }
-  
-  span.psw {
-	float: right;
-	padding-top: 16px;
-  }
-  
-  /* The Modal (background) */
-  .modal {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 3; /* Sit on top */
-	left: 0;
-	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: rgb(0,0,0); /* Fallback color */
-	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-	padding-top: 60px;
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
-	background-color: #fefefe;
-	margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-	border: 1px solid #888;
-	width: 80%; /* Could be more or less, depending on screen size */
-  }
-  
-  /* The Close Button (x) */
-  .close {
-	position: absolute;
-	right: 25px;
-	top: 0;
-	color: #000;
-	font-size: 35px;
-	font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-	color: red;
-	cursor: pointer;
-  }
-  
-  /* Add Zoom Animation */
-  .animate {
-	-webkit-animation: animatezoom 0.6s;
-	animation: animatezoom 0.6s
-  }
-  
-  @-webkit-keyframes animatezoom {
-	from {-webkit-transform: scale(0)} 
-	to {-webkit-transform: scale(1)}
-  }
+
+
+/*Registration form */
+
 	
-  @keyframes animatezoom {
-	from {transform: scale(0)} 
-	to {transform: scale(1)}
-  }
-  
-  /* Change styles for span and cancel button on extra small screens */
-  @media screen and (max-width: 300px) {
-	span.psw {
-	   display: block;
-	   float: none;
+	#form-main{
+	width:100%;
+	float:left;
+	padding-top:0px;
 	}
-	.cancelbtn {
-	   width: 100%;
+	
+	
+	#form-div {
+	background-color:rgba(72,72,72,0.4);
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 450px;
+	position:relative;
+	left:110%;
+	top:5%;
+	transform: translate(-110%,-5%);
+	margin-top:30px;
+	margin-left: -260px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
 	}
-  }
+	
+	.feedback-input {
+	color:#3c3c3c;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight:500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	  border: 3px solid rgba(0,0,0,0);
+	}
+	
+	.feedback-input:focus{
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #3498db;
+	color: #3498db;
+	outline: none;
+	  padding: 13px 13px 13px 54px;
+	}
+	
+	.focused{
+	color:#30aed6;
+	border:#30aed6 solid 3px;
+	}
+	
+	
 
+	#name{
+		background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+		background-size: 30px 30px;
+		background-position: 11px 8px;
+		background-repeat: no-repeat;
+	}
 
-/*End of Change*/
+	#location{
+		background-image: url(https://img.icons8.com/ios-filled/50/000000/worldwide-location.png);
+		background-size: 30px 30px;
+		background-position: 11px 8px;
+		background-repeat: no-repeat;
+	}
+	#phone{
+		background-image: url(https://img.icons8.com/metro/26/000000/phone.png);
+		background-size: 30px 30px;
+		background-position: 11px 8px;
+		background-repeat: no-repeat;
+	}
+	#phone:focus{
+		background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+		background-size: 30px 30px;
+		background-position: 8px 5px;
+	 	background-position: 11px 8px;
+		background-repeat: no-repeat;
+	}
+		
+	
+	#name:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+	}
+	
+	#email{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+	}
+	
+	#email:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+	}
+	
+	#comment{
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+	}
+	#date{
+		background-image: url(https://img.icons8.com/small/16/000000/planner.png);
+		background-size: 30px 30px;
+		background-position: 11px 8px;
+		background-repeat: no-repeat;
+	}
+	
+	textarea {
+		width: 100%;
+		height: 150px;
+		line-height: 150%;
+		resize:vertical;
+	}
+	
+	input:hover, textarea:hover,
+	input:focus, textarea:focus {
+	background-color:white;
+	}
+	
+	#button-blue{
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	float:left;
+	width: 100%;
+	border: #fbfbfb solid 4px;
+	cursor:pointer;
+	background-color: #3498db;
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	border-radius:40px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	  margin-top:-4px;
+	  font-weight:700;
+	}
+	
+	#button-blue:hover{
+	background-color: rgba(0,0,0,0);
+	color: #0493bd;
+	border-radius:40px;
+	}
+	
+	.submit:hover {
+	color: #3498db;
+	}
+	
+	.ease {
+	width: 0px;
+	height: 74px;
+	border-radius: 40px;
+	background-color: #fbfbfb;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+	}
+	
+	.submit:hover .ease{
+	  width:100%;
+	  background-color:white;
+	}
+	
+	@media only screen and (max-width: 580px) {
+	#form-div{
+	left: 3%;
+	margin-right: 3%;
+	width: 88%;
+	margin-left: 0;
+	padding-left: 3%;
+	padding-right: 3%;
+	}
+	}
+	.form-main .title{
+		font-weight:400;
+		font-size:13px;
+		color:black;
+
+	}
+
+	.card {
+		position:relative;
+		width: 5%;
+		height:40%;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		transition: 0.3s;
+		width: 40%;
+	  }
+	  
+	  .card:hover {
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	  }
+	  
+	  .container {
+		padding: 2px 16px;
+	  }
 
 /*--------------------------------------------------- CONTACT ----------------------------*/
 
