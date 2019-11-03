@@ -16,7 +16,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="main.js"></script> 
 	</head>
-	
+	<body>
 	<body onload="">
 		<div id="loadbg"></div>
 		<div id="spinbox">
@@ -28,32 +28,165 @@
 			<h1 id="title">WAIT&nbsp&nbsp&nbspAWAY</h1>
 			<a id="titlebutton" href="#instructions"><div class="button">GET&nbspSTARTED</div></a>
 		</section>
+		<!---Set by step on setting up appointment -->
+		<section id="instructions">
+			Subpage 2
+			<p = class= "subtitle">SET UP YOUR FRIST APPOINTMENT IN 2 MINUTES</p> 
+			<H2> Instructions </H3>
 		<!---End of Changes -->
 		
 		<!---Dharitri's New Code -->
 		<section id="instructions">
-			<p class="subtitle">SET UP YOUR FIRST APPOINTMENT IN TWO MINUTES</p> 
-			<h2>Instructions</h2>
-		</section>
+				<p class="subtitle">SET UP YOUR FIRST APPOINTMENT IN TWO MINUTES</p> 
+				<div class="circle1-text">
+						1.Choose a location 
+						</div>
+				<div class="circle2-text">
+						2.Enter Name 
+						</div>
+				<div class="circle3-text">
+						3. Select date and time 
+						</div>
+				<div class="circle4-text">
+						4.Stay notified until alert is sent
+						</div>
+			</section>
 		<!---End of Changes -->
 		
+
+
+
+
+
+
+
+
+		
+
 		<!---Robert's New Code -->
 		<section id="search">
-			<div class = "search">
-				<input type = "text" class = "searchtext" placeholder="Search">
+			<input type ="search" class ="searchbox" name ="name"  placeholder="Search">
+	
+		
+			
+			<div class = "paragraph">Book an appointment</div>
+			<div id="form-main">
+				<div id="form-div">
+				<form class="form" id="form1">
+					<p class="name">
+						<input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Location" id="location" />
+					</p>
+	
+					<p class="name">
+						<input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+					</p>
+				   
+					<p class="name">
+					  <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="(xxx)-xxx-xxx" id="phone" />
+					</p>
+	
+					<p class="email">
+					  <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+					</p>
+	
+					<p class="email">
+						<input name= "name"  class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" type="text" id="date"  placeholder="DD/MM/YYYY" />
+					  </p>
+				   
+					<p class="text">
+					  <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Message(request)"></textarea>
+					</p>
+				   
+					<div class="submit">
+						<input type="submit" value="Book now!" placeholder = "Book now!" id="button-blue"/>
+						<div class="ease"></div>
+					</div>
+				</form>
+				</div>
 			</div>
-		</section>
+	 
+	
+	
+	<!--ROBERT CHANGES-->
+	
+	
+	
+	<!--ROBERT END OF CHANGES-->
+	
+			
+			</section>
 		<!---End of Changes -->
 		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		<!---Parva's New Code -->
 		<section id="contact">
 			<center> <p class="title"> About Us </p> </center>
-			<p class="aboutUsPara"> We are 5 students from The University of Ottawa and we have decided to solve an issue plaguing us and the rest of Canada for years,waiting in clinics. The average wait time for walkin clinics are [Time], there are better things you can do with that time, instead of waiting at a clinic, you can do some shopping, get food etc. We have designed an app that works with your clinic to put you in a virtual waiting room instead of a real one while displaying an accurate wait time so you can do what's important, it is called WaitAway.
- 			</p>
-			<p class="whyUs">
+		<table class="table1">
+			<tr>
+				<th>
+					<img src="assets/img/logo.png" alt="Guillaume" height="218" width="218"/>
+				</th>
+				<th>
+					<img src="assets/img/rob.jpg" alt="Robert" height="218" width="218"/>
+				</th>
+				<th>
+					<img src="assets/img/logo.png" alt="Dharitri" height="218" width="218"/>
+				</th>
+				<th>
+					<img src="assets/img/logo.png" alt="Amin" height="218" width="218"/>
+				</th>
+				<th>
+					<img src="assets/img/Parva.jpg" alt="Parva" height="218" width="186"/>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<p>Guillaume </p>
+				</th>
+				<th>
+					<p>Robert<br>rbasi008@uottawa.ca</p>
+				</th>
+				<th>
+					<p>Dharitri</p>
+				</th>
+				<th>
+					<p>Amin</p>
+				</th>
+				<th>
+					<p>Parva<br>ppath014@uottawa.ca</p>
+				</th>
+			</tr>
+		</table>
+		<table class="table2">
+		<tr>
+			<th><div class="whyUs">
 			Why Us <br> <br>
 			When looking online we found many waiting room apps but all of them had one main thing in common, they were for restaurants. This is what makes us different we have a great idea that clearly works, as seen by the saturation of the restaurant market, but we are going into a market with no other competition.
-			</p>
+			</div></th>
+			<th><div class="aboutUsPara"> Who Are We <br> <br> 
+			We are 5 students from The University of Ottawa and we have decided to solve an issue plaguing us and the rest of Canada for years,waiting in clinics. There are better things you can do with your time, instead of waiting at a clinic, you can do some shopping, get food etc. We have designed an app that works with your clinic to put you in a virtual waiting room instead of a real one while displaying an accurate wait time so you can do what's important, it is called WaitAway.
+ 			</div></th>
+		</tr>
+			</table>
 		</section>
 		<!--End of Changes-->
 		
@@ -69,4 +202,5 @@
 			</div>
 		</footer>
 	</body>
+</body>
 </html>
