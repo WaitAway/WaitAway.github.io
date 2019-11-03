@@ -471,21 +471,24 @@ section#contact{
 	background-color: #5286BA;
 }
 
-/*Parva Changes*/
+/*Parva Changes*/	
+.table1{
+	width: 100%;
+}
+
+.table2{
+	position: relative;
+	top: 20%;
+}
+
 .aboutUsPara{
-	margin-top:500px;
-	margin-left:1000px;
 }
 
 .whyUs{
-	margin-top:-200px;
-	margin-right:1000px;
-	margin-left: 100px;
 	border-style: outset;
   	border-color: #5E6F80;
 	background-color:#385C80;
 } /*End of changes*/
-
 /*--------------------------------------------------- PRICING ----------------------------*/
 
 /*Amin's New Code*/
