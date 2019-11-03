@@ -38,6 +38,7 @@ $(document).ready(function(){
 				left: '0%',
 				marginLeft:0
 			}, 600, "swing", function(){
+				$("#loadbg").remove()
 				$("#loadbg").css('opacity', '0');
 				$("body").css({"overflow":"visible"});
 				
@@ -48,5 +49,8 @@ $(document).ready(function(){
 					$("#titlebutton").animate({"opacity":"1"},100);
 				});
 			});
-	}, 0); 
+	}, 2000); 
 });
+/*Robert new code*/
+
+/* End of Robert new code*/
