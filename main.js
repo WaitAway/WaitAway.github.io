@@ -55,7 +55,7 @@ $(document).ready(function(){
 					});
 				});
 			});
-	}, 100); 
+	}, 2000); 
 });
 
 window.setInterval(function(){
