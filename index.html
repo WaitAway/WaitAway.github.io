@@ -17,190 +17,134 @@
 		<script src="main.js"></script> 
 	</head>
 	<body>
-	<body onload="">
-		<div id="loadbg"></div>
-		<div id="spinbox">
-				<img id="spinner" src="assets/img/logo.png" alt="Loading..." />
-		</div>
-		
-		<!---Guy's New Code -->
-		<section id="home">
-			<h1 id="title">WAIT&nbsp&nbsp&nbspAWAY</h1>
-			<a id="titlebutton" href="#instructions"><div class="button">GET&nbspSTARTED</div></a>
-		</section>
-		<!---Set by step on setting up appointment -->
-		<section id="instructions">
-			Subpage 2
-			<p = class= "subtitle">SET UP YOUR FRIST APPOINTMENT IN 2 MINUTES</p> 
-			<H2> Instructions </H3>
-		<!---End of Changes -->
-		
-		<!---Dharitri's New Code -->
-		<section id="instructions">
-				<p class="subtitle">SET UP YOUR FIRST APPOINTMENT IN TWO MINUTES</p> 
-				<div class="circle1-text">
-						1.Choose a location 
-						</div>
-				<div class="circle2-text">
-						2.Enter Name 
-						</div>
-				<div class="circle3-text">
-						3. Select date and time 
-						</div>
-				<div class="circle4-text">
-						4.Stay notified until alert is sent
-						</div>
-			</section>
-		<!---End of Changes -->
-		
-
-
-
-
-
-
-
-
-		
-
-		<!---Robert's New Code -->
-		<section id="search">
-			<input type ="search" class ="searchbox" name ="name"  placeholder="Search">
-	
-		
+		<div style="min-width: 1800px; margin: 0 auto;">
+			<div id="loadbg"></div>
+			<div id="spinbox">
+					<img id="spinner" src="assets/img/logo.png" alt="Loading..." />
+			</div>
 			
-			<div class = "paragraph">Book an appointment</div>
-			<div id="form-main">
-				<div id="form-div">
-				<form class="form" id="form1">
-					<p class="name">
-						<input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Location" id="location" />
-					</p>
-	
-					<p class="name">
-						<input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
-					</p>
-				   
-					<p class="name">
-					  <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="(xxx)-xxx-xxx" id="phone" />
-					</p>
-	
-					<p class="email">
-					  <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
-					</p>
-	
-					<p class="email">
-						<input name= "name"  class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" type="text" id="date"  placeholder="DD/MM/YYYY" />
-					  </p>
-				   
-					<p class="text">
-					  <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Message(request)"></textarea>
-					</p>
-				   
-					<div class="submit">
-						<input type="submit" value="Book now!" placeholder = "Book now!" id="button-blue"/>
-						<div class="ease"></div>
-					</div>
-				</form>
+			<a href="#home"><div class="navdot" id="nd1"></div></a>
+			<a href="#instructions"><div class="navdot" id="nd2"></div></a>
+			<a href="#search"><div class="navdot" id="nd3"></div></a>
+			<a href="#contact"><div class="navdot" id="nd4"></div></a>
+			<a href="#pricing"><div class="navdot" id="nd5"></div></a>
+			
+			<section id="home">
+				<h1 id="title">WAIT&nbsp&nbsp&nbspAWAY</h1>
+				<a id="titlebutton" href="#instructions"><div class="button">GET&nbspSTARTED</div></a>
+			</section>
+
+			<section id="instructions">
+				<div id="ib1" class="ibubble">
+					<p class="ibtext">Choose a location!</p>
+					<a href="#search"><div class="button" id="ibbutton">Click here!</div></a>
 				</div>
-			</div>
-	 
-	
-	
-	<!--ROBERT CHANGES-->
-	
-	
-	
-	<!--ROBERT END OF CHANGES-->
-	
-			
+				<div id="ib2" class="ibubble"><p class="ibtext">Enter your info</p></div>
+				<div id="ib3" class="ibubble"><p class="ibtext">Select date and time</p></div>
+				<div id="ib4" class="ibubble"><p class="ibtext">Stay notified about<br>your appointment</p></div>
+				<div id="ib5" class="ibsmall"><p class="ibstext">1</p></div>
+				<div id="ib6" class="ibsmall"><p class="ibstext">2</p></div>
+				<div id="ib7" class="ibsmall"><p class="ibstext">3</p></div>
+				<div id="ib8" class="ibsmall"><p class="ibstext">4</p></div>
 			</section>
-		<!---End of Changes -->
-		
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		<!---Parva's New Code -->
-		<section id="contact">
-			<center> <p class="title"> About Us </p> </center>
-		<table class="table1">
-			<tr>
-				<th>
-					<img src="assets/img/logo.png" alt="Guillaume" height="218" width="218"/>
-				</th>
-				<th>
-					<img src="assets/img/rob.jpg" alt="Robert" height="218" width="218"/>
-				</th>
-				<th>
-					<img src="assets/img/logo.png" alt="Dharitri" height="218" width="218"/>
-				</th>
-				<th>
-					<img src="assets/img/logo.png" alt="Amin" height="218" width="218"/>
-				</th>
-				<th>
-					<img src="assets/img/Parva.jpg" alt="Parva" height="218" width="186"/>
-				</th>
-			</tr>
-			<tr>
-				<th>
-					<p>Guillaume </p>
-				</th>
-				<th>
-					<p>Robert<br>rbasi008@uottawa.ca</p>
-				</th>
-				<th>
-					<p>Dharitri</p>
-				</th>
-				<th>
-					<p>Amin</p>
-				</th>
-				<th>
-					<p>Parva<br>ppath014@uottawa.ca</p>
-				</th>
-			</tr>
-		</table>
-		<table class="table2">
-		<tr>
-			<th><div class="whyUs">
-			Why Us <br> <br>
-			When looking online we found many waiting room apps but all of them had one main thing in common, they were for restaurants. This is what makes us different we have a great idea that clearly works, as seen by the saturation of the restaurant market, but we are going into a market with no other competition.
-			</div></th>
-			<th><div class="aboutUsPara"> Who Are We <br> <br> 
-			We are 5 students from The University of Ottawa and we have decided to solve an issue plaguing us and the rest of Canada for years,waiting in clinics. There are better things you can do with your time, instead of waiting at a clinic, you can do some shopping, get food etc. We have designed an app that works with your clinic to put you in a virtual waiting room instead of a real one while displaying an accurate wait time so you can do what's important, it is called WaitAway.
- 			</div></th>
-		</tr>
+			<section id="search">
+				<div id="form-main">
+					<div id="form-div">
+						<form class="form" id="form1">
+							<p class="name">
+								<input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Location" id="location" />
+							</p>
+			
+							<p class="name">
+								<input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+							</p>
+						   
+							<p class="name">
+							  <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="(xxx)-xxx-xxx" id="phone" />
+							</p>
+			
+							<p class="email">
+							  <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+							</p>
+			
+							<p class="email">
+								<input name= "name"  class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" type="text" id="date"  placeholder="DD/MM/YYYY" />
+							  </p>
+						   
+							<p class="text">
+							  <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Message(request)"></textarea>
+							</p>
+						   
+							<div class="submit">
+								<input type="submit" value="Book now!" placeholder = "Book now!" id="button-blue"/>
+								<div class="ease"></div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			
+			<section id="contact">
+				<center> <p class="title"> About Us </p> </center><br>
+			<table class="table1">
+				<tr>
+					<th>
+						<img src="assets/img/gui.jpg" alt="Guillaume" height="218" width="218"/>
+					</th>
+					<th>
+						<img src="assets/img/rob.jpg" alt="Robert" height="218" width="218"/>
+					</th>
+					<th>
+						<img src="assets/img/dha.jpg" alt="Dharitri" height="218" width="218"/>
+					</th>
+					<th>
+						<img src="assets/img/amin.png" alt="Amin" height="218" width="218"/>
+					</th>
+					<th>
+						<img src="assets/img/Parva.jpg" alt="Parva" height="218" width="186"/>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<p>Guillaume </p>
+					</th>
+					<th>
+						<p>Robert</p>
+					</th>
+					<th>
+						<p>Dharitri</p>
+					</th>
+					<th>
+						<p>Amin</p>
+					</th>
+					<th>
+						<p>Parva</p>
+					</th>
+				</tr>
 			</table>
-		</section>
-		<!--End of Changes-->
+			<table class="table2">
+			<tr>
+				<th><div class="whyUs">
+				Why Us <br> <br>
+				When looking online we found many waiting room apps but all of them had one main thing in common, they were for restaurants. This is what makes us different we have a great idea that clearly works, as seen by the saturation of the restaurant market, but we are going into a market with no other competition.
+				</div></th>
+				<th><div class="aboutUsPara"> Who Are We <br> <br> 
+				We are 5 students from The University of Ottawa and we have decided to solve an issue plaguing us and the rest of Canada for years,waiting in clinics. There are better things you can do with your time, instead of waiting at a clinic, you can do some shopping, get food etc. We have designed an app that works with your clinic to put you in a virtual waiting room instead of a real one while displaying an accurate wait time so you can do what's important, it is called WaitAway.
+				</div></th>
+			</tr>
+				</table>
+			</section>
+
+			<section id="pricing">
+				Pricing
+			</section>
 		
-		<!---Amin's New Code -->
-		<section id="pricing">
-			Pricing
-		</section>
-		<!--End of Changes-->
-    
-		<footer>
-			<div class="text-center">
-				<br>Footer
-			</div>
-		</footer>
+			<footer>
+				<div class="text-center">
+					<br>Hosted on GitHub. Made by us!
+				</div>
+			</footer>
+		</div>
 	</body>
-</body>
 </html>
