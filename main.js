@@ -16,7 +16,7 @@ function loadSpin(){
 }
 
 function book(){
-	alert("click");
+	$("#form-main").animate({"opacity":"1"},100);
 };
 
 $(document).ready(function(){
@@ -61,7 +61,7 @@ $(document).ready(function(){
 					});
 				});
 			});
-	}, 2000); 
+	}, 100); 
 });
 
 window.setInterval(function(){
@@ -126,3 +126,9 @@ function showNav(){
 		animated = false;
 	});
 }
+
+window.addEventListener('click', function(e){   
+  if (!document.getElementById('form-main').contains(e.target)){
+    $("#form-main").animate({"opacity":"0"},100);
+  } 
+});

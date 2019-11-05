@@ -337,11 +337,12 @@ section#search{
 	background-image:linear-gradient(#e8554d,#ab403a);
 }
 
-/*Registration form */
+	/*Registration form */
 	#form-main{
-		width:100%;
-		float:left;
-		padding-top:0px;
+		position:fixed;
+		left:70%;
+		top:25%;
+		opacity:0;
 	}
 	
 	#form-div {
