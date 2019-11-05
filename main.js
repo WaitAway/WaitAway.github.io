@@ -15,6 +15,10 @@ function loadSpin(){
 	}
 }
 
+function test(){
+	console.log("gotcha");
+};
+
 $(document).ready(function(){
 	$(window).scrollTop(0);
 	

@@ -85,7 +85,6 @@ h1{
 	text-align: center;
 }
 
-
 section{
 	/*Ensures every section is the height of the window*/
 	height: 100vh;
@@ -95,6 +94,15 @@ section{
 	/*Normally, no text should be outside a section but we never know*/
 	color:white;
 	font-size:25px;
+}
+
+iframe{
+	display:block;
+	border: 4px solid black;
+	border-radius:25px;
+	width:85%;
+	height:70vh;
+	margin: auto;
 }
 
 .infobox{
