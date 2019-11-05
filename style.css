@@ -565,6 +565,16 @@ section#pricing{
 	width:33%
 }
 
+.gold{
+	background-image: linear-gradient(#F0DC55,#CD9316);
+	text-shadow: 0px 0px 5px black;
+	font-weight: bold;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+    -o-box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+}
+
 /*--------------------------------------------------- FOOTER ----------------------------*/
 
 footer{
