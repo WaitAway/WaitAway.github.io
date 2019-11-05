@@ -227,7 +227,7 @@ section#instructions{
 
 #lines{
 	position:absolute;
-	top:116vh;
+	top:126vh;
 	left:300px;
 	opacity:0.2;
 }
@@ -284,42 +284,42 @@ section#instructions{
 }
 
 #ib1{
-	top:100px;
+	top:70px;
 	left:150px;
 }
 
 #ib2{
-	top:200px;
+	top:170px;
 	left:500px;
 }
 
 #ib3{
-	top:-450px;
+	top:-480px;
 	left:950px;
 }
 
 #ib4{
-	top:-450px;
+	top:-480px;
 	left:1450px;
 }
 
 #ib5{
-	top:-1075px;
+	top:-1105px;
 	left:150px;
 }
 
 #ib6{
-	top:-575px;
+	top:-605px;
 	left:725px;
 }
 
 #ib7{
-	top:-1175px;
+	top:-1205px;
 	left:1175px;
 }
 
 #ib8{
-	top:-775px;
+	top:-805px;
 	left:1450px;
 }
 
@@ -582,5 +582,56 @@ footer{
 	height:7vh;
 	color:white;
 	text-align: center;
+}
+
+/*--------------------------------------------------- FONTAWESOME ----------------------------*/
+
+.fa {
+    padding: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #fff;
+    margin: 0 10px;
+	text-align: center;
+	box-shadow: 0 5px 5px grey;
+    position: relative;
+	top:480px;
+	left:840px;
+	opacity:0;
+	z-index:3;
+}
+
+.fa:hover {
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 5px 15px grey
+}
+
+.fa-transform-fb {
+    right: 6px;
+    bottom: 9px;
+}
+
+.fa-transform-li {
+    right: 7.25px;
+    bottom: 9px;
+}
+
+.fa-transform-ig {
+    right: 8px;
+    bottom: 9px;
+}
+
+.fb {
+    background: #3B5998;
+}
+
+.li {
+    background: #007bb5;
+}
+
+.ig {
+    background: #125688;
 }
 

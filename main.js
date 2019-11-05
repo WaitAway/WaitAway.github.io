@@ -47,6 +47,7 @@ $(document).ready(function(){
 					$("#titlebutton").css({"z-index":"3"});
 					$("#title").animate({"opacity":"1"},100);
 					$("#titlebutton").animate({"opacity":"1"},100);
+					$(".fa").animate({"opacity":"1"},100);
 					
 					$({someValue: 1}).animate({someValue: 0}, {
 						duration: 200,
