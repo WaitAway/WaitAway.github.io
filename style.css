@@ -82,6 +82,7 @@ h1{
 	margin:0;
 	font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 	text-shadow: 0px 0px 5px black;
+	text-align: center;
 }
 
 
@@ -94,6 +95,14 @@ section{
 	/*Normally, no text should be outside a section but we never know*/
 	color:white;
 	font-size:25px;
+}
+
+.infobox{
+	border-radius: 25px;
+	padding:25px;
+	width:80%;
+	background-color:rgba(0,0,0,0.1);
+    margin: 0 auto;
 }
 
 .important{
@@ -532,6 +541,8 @@ section#contact{
 }
 
 section#contact img{
+	width:218px;
+	height:218px;
 	border-radius:100%;
 	box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
     -moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
@@ -539,22 +550,19 @@ section#contact img{
     -o-box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
 }
 
-.table1{
-	width: 100%;
-}
-
-.abouttext{
-	border-radius: 25px;
-	padding:25px;
-	width:80%;
-	background-color:rgba(166,171,79,0.8);
-    margin: 0 auto;
-    
+section table{
+	width: 85%;
+	margin: 0 auto;
 } 
+
 /*--------------------------------------------------- PRICING ----------------------------*/
 
 section#pricing{
 	background-image:linear-gradient(#aa6fed,#744ba3);
+}
+
+.pricebox{
+	width:33%
 }
 
 /*--------------------------------------------------- FOOTER ----------------------------*/
