@@ -1,4 +1,5 @@
 var isLoading = true;
+var canShowNav = false;
 loadSpin();
 
 function loadSpin(){
@@ -37,11 +38,11 @@ $(document).ready(function(){
 				left: '0%',
 				marginLeft:0
 			}, 600, "swing", function(){
-				$("#loadbg").remove()
-				$("#loadbg").css('opacity', '0');
-				$("body").css({"overflow":"visible"});
-				
 				$('#spinner').animate({top:'20%'}, 300, "swing", function(){
+					showNav();
+					canShowNav = true;
+					$("#loadbg").remove();
+					$("body").css({"overflow":"visible"});
 					$("#title").css({"z-index":"3"});
 					$("#titlebutton").css({"z-index":"3"});
 					$("#title").animate({"opacity":"1"},100);
@@ -55,7 +56,7 @@ $(document).ready(function(){
 					});
 				});
 			});
-	}, 2000); 
+	}, 100); 
 });
 
 window.setInterval(function(){
@@ -84,7 +85,7 @@ function activate(id){
 	if($("#nd"+id).hasClass("active") == false) $("#nd"+id).addClass("active");
 }
 
-var navHidden = false;
+var navHidden = true;
 var animated = false;
 var mouseX = -1;
 window.addEventListener("wheel", hideNav);
@@ -105,16 +106,18 @@ function hideNav(){
 
 $(document).mousemove(function(event) {
 	mouseX = event.pageX/window.innerWidth;
-	if(mouseX >= 0.9 && navHidden && !animated){
-		navHidden = false;
-		
-        animated = true;
-		$("#nd1").animate({"left":"95%"},100,"linear");
-		$("#nd2").animate({"left":"95%"},100,"linear");
-		$("#nd3").animate({"left":"95%"},100,"linear");
-		$("#nd4").animate({"left":"95%"},100,"linear");
-		$("#nd5").animate({"left":"95%"},100,"linear", function() {
-			animated = false;
-		});
-	}
+	if(mouseX >= 0.9 && canShowNav && navHidden && !animated) showNav();
 });
+
+function showNav(){
+	navHidden = false;
+	
+	animated = true;
+	$("#nd1").animate({"left":"95%"},100,"linear");
+	$("#nd2").animate({"left":"95%"},100,"linear");
+	$("#nd3").animate({"left":"95%"},100,"linear");
+	$("#nd4").animate({"left":"95%"},100,"linear");
+	$("#nd5").animate({"left":"95%"},100,"linear", function() {
+		animated = false;
+	});
+}

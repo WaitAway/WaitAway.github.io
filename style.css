@@ -26,8 +26,6 @@ body{
 	scroll-behavior: smooth;
 }
 
-/*Guy Changes*/
-/*Comments here coming soon!*/
 #loadbg {
    width: 100%;
    height: 100%;
@@ -39,7 +37,6 @@ body{
    z-index: 1;
 }
 
-/*Comments here coming soon!*/
 #spinbox {
 	background-image: linear-gradient(rgba(112,184,255,1), rgba(82,134,186,1));
 	border-radius:50%;
@@ -55,7 +52,6 @@ body{
 	opacity:1;
 }
 
-/*Comments here coming soon!*/
 #spinner{
   position:absolute;
   top:50%;
@@ -85,7 +81,8 @@ a:hover{
 h1{
 	margin:0;
 	font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
-}/*End of Changes*/
+	text-shadow: 0px 0px 5px black;
+}
 
 
 section{
@@ -99,10 +96,18 @@ section{
 	font-size:25px;
 }
 
+.important{
+	text-transform: uppercase;
+	font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+	text-shadow: 0px 0px 2px black;
+	margin-left:5px;
+	margin-right:5px;
+}
+
 .navdot{
 	position:fixed;
 	border: 2px solid white;
-	left:95%;
+	left:100%;
 	border-radius:100%;
 	z-index:10;
 	width:25px;
@@ -211,6 +216,13 @@ section#instructions{
 	background-image:linear-gradient(#4de876,#2f944a);
 }
 
+#lines{
+	position:absolute;
+	top:116vh;
+	left:300px;
+	opacity:0.2;
+}
+
 .ibsmall,.ibubble{
 	position:relative;
 	width:300px;
@@ -251,6 +263,10 @@ section#instructions{
 	padding-top:25%;
 }
 
+.ibstextsp{
+	padding-top:15%;
+}
+
 #ibbutton{
 	margin-top:10px;
 	display: inline-block;
@@ -259,43 +275,43 @@ section#instructions{
 }
 
 #ib1{
-	top:10%;
-	left:10%;
+	top:100px;
+	left:150px;
 }
 
 #ib2{
-	top:25%;
-	left:25%;
+	top:200px;
+	left:500px;
 }
 
 #ib3{
-	top:-50%;
-	left:50%;
+	top:-450px;
+	left:950px;
 }
 
 #ib4{
-	top:-50%;
-	left:75%;
+	top:-450px;
+	left:1450px;
 }
 
 #ib5{
-	top:-115%;
-	left:10%;
+	top:-1075px;
+	left:150px;
 }
 
 #ib6{
-	top:-60%;
-	left:38%;
+	top:-575px;
+	left:725px;
 }
 
 #ib7{
-	top:-125%;
-	left:63%;
+	top:-1175px;
+	left:1175px;
 }
 
 #ib8{
-	top:-85%;
-	left:75%;
+	top:-775px;
+	left:1450px;
 }
 
 /*--------------------------------------------------- SEARCH ----------------------------*/
@@ -512,35 +528,33 @@ section#search{
 /*--------------------------------------------------- CONTACT ----------------------------*/
 
 section#contact{
-	background-color: #5286BA;
+	background-image:linear-gradient(#d8de66,#a6ab4f);
 }
 
 section#contact img{
 	border-radius:100%;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+    -o-box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
 }
-
 
 .table1{
 	width: 100%;
 }
 
-.table2{
-	position: relative;
-	top: 20%;
-}
-
-.aboutUsPara{
-}
-
-.whyUs{
-	border-style: outset;
-  	border-color: #5E6F80;
-	background-color:#385C80;
+.abouttext{
+	border-radius: 25px;
+	padding:25px;
+	width:80%;
+	background-color:rgba(166,171,79,0.8);
+    margin: 0 auto;
+    
 } 
 /*--------------------------------------------------- PRICING ----------------------------*/
 
 section#pricing{
-	background-color: #5A93CC;
+	background-image:linear-gradient(#aa6fed,#744ba3);
 }
 
 /*--------------------------------------------------- FOOTER ----------------------------*/
