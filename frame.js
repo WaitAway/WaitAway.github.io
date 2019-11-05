@@ -19,27 +19,27 @@ function initMap() {
 
 $(document).ready(function(){
 	//$(".cardcontainer").css({"border-radius":"0px"});
-	$("#card1").on("mouseover", function () {
+	$(".card1").on("mouseover", function () {
 		map.panTo(marker1.getPosition());
 	});
 	
-	$("#card2").on("mouseover", function () {
+	$(".card2").on("mouseover", function () {
 		map.panTo(marker2.getPosition());
 	});
 	
-	$("#card3").on("mouseover", function () {
+	$(".card3").on("mouseover", function () {
 		map.panTo(marker5.getPosition());
 	});
 	
-	$("#card4").on("mouseover", function () {
+	$(".card4").on("mouseover", function () {
 		map.panTo(marker4.getPosition());
 	});
 	
-	$("#card5").on("mouseover", function () {
+	$(".card5").on("mouseover", function () {
 		map.panTo(marker3.getPosition());
 	});
 	
-	$("#card6").on("mouseover", function () {
+	$(".card6").on("mouseover", function () {
 		map.panTo(marker6.getPosition());
 	});
 });

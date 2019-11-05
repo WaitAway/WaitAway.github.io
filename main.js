@@ -15,8 +15,8 @@ function loadSpin(){
 	}
 }
 
-function test(){
-	console.log("gotcha");
+function book(){
+	alert("click");
 };
 
 $(document).ready(function(){
@@ -61,7 +61,7 @@ $(document).ready(function(){
 					});
 				});
 			});
-	}, 100); 
+	}, 2000); 
 });
 
 window.setInterval(function(){
