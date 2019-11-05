@@ -80,7 +80,7 @@ a:hover{
 
 h1{
 	margin:0;
-	font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+	font-family: 'Arial Black', 'Archivo Black', 'Arial Bold', Gadget, sans-serif;
 	text-shadow: 0px 0px 5px black;
 	text-align: center;
 }
@@ -115,7 +115,7 @@ iframe{
 
 .important{
 	text-transform: uppercase;
-	font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+	font-family: 'Arial Black','Archivo Black', 'Arial Bold', Gadget, sans-serif;
 	text-shadow: 0px 0px 2px black;
 	margin-left:5px;
 	margin-right:5px;
@@ -606,7 +606,7 @@ footer{
 	box-shadow: 0 5px 5px grey;
     position: relative;
 	top:480px;
-	left:840px;
+	left:720px;
 	opacity:0;
 	z-index:3;
 }
