@@ -283,7 +283,7 @@ section#instructions{
 	position:relative;
 	width:250px;
 	height:250px;
-	transform:translateX(-100px);
+	transform:translateX(-200px);
 	border-radius:50%;
 	background-image:linear-gradient(#4de876,#2f944a);
 	text-align: center;
@@ -332,43 +332,43 @@ section#instructions{
 }
 
 #ib1{
-	top:70px;
-	left:150px;
+	top:50px;
+	left:210px;
 }
 
 #ib2{
-	top:170px;
-	left:500px;
+	top:80px;
+	left:480px;
 }
 
 #ib3{
 	top:-480px;
-	left:950px;
+	left:980px;
 }
 
 #ib4{
-	top:-480px;
+	top:-450px;
 	left:1450px;
 }
 
 #ib5{
-	top:-1105px;
-	left:150px;
+	top:-1030px;
+	left:350px;
 }
-
+/*725px;*/
 #ib6{
 	top:-605px;
-	left:725px;
+	left:770px;
 }
-
+/*-1205px;*/
 #ib7{
-	top:-1205px;
+	top: -900px; 
 	left:1175px;
 }
 
 #ib8{
 	top:-805px;
-	left:1450px;
+	left:1370px;
 }
 
 /*--------------------------------------------------- SEARCH ----------------------------*/
