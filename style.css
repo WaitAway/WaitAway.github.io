@@ -18,7 +18,6 @@ body{
 	
 	/*By default, there's some page margin we don't want*/
 	margin: 0;
-	
 	/*Before the page is done loading, we don't want the user to be able to scroll*/
 	/*Change: Guy*/
 	overflow: hidden;
@@ -235,15 +234,16 @@ section#instructions{
 
 #lines{
 	position:absolute;
-	top:126vh;
-	left:300px;
+	top:116vh;
+	left:75px;
 	opacity:0.2;
 }
 
 .ibsmall,.ibubble{
 	position:relative;
-	width:300px;
-	height:300px;
+	width:250px;
+	height:250px;
+	transform:translateX(-100px);
 	border-radius:50%;
 	background-image:linear-gradient(#4de876,#2f944a);
 	text-align: center;
