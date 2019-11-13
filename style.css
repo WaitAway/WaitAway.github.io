@@ -559,6 +559,14 @@ section#contact img{
     -o-box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
 }
 
+.pic1:hover{
+	border-radius:100%;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+    -o-box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+}
+
 section table{
 	width: 85%;
 	margin: 0 auto;
