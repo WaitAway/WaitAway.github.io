@@ -253,6 +253,13 @@ section#instructions{
 	-moz-box-shadow: 0 5px 10px rgba(0,0,0,0.7);
 	-webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.7);
 	-o-box-shadow: 0 5px 10px rgba(0,0,0,0.7);
+	transition: .3s ease;
+}
+.ibubble:hover{
+	box-shadow: 0px 0px 15px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 15px rgba(0,0,0,1);
+    -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,1);
+    -o-box-shadow: 0px 0px 15px rgba(0,0,0,1);
 }
 
 .ibsmall{
@@ -343,6 +350,7 @@ section#search{
 		left:70%;
 		top:25%;
 		opacity:0;
+		z-index: -1;
 	}
 	
 	#form-div {
@@ -352,7 +360,7 @@ section#search{
 		padding-top:35px;
 		padding-bottom:50px;
 		width: 450px;
-		position:relative;
+		position:fixed;
 		left:110%;
 		top:5%;
 		transform: translate(-110%,-5%);
