@@ -253,13 +253,6 @@ section#instructions{
 	-moz-box-shadow: 0 5px 10px rgba(0,0,0,0.7);
 	-webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.7);
 	-o-box-shadow: 0 5px 10px rgba(0,0,0,0.7);
-	transition: .3s ease;
-}
-.ibubble:hover{
-	box-shadow: 0px 0px 15px rgba(0,0,0,1);
-    -moz-box-shadow: 0px 0px 15px rgba(0,0,0,1);
-    -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,1);
-    -o-box-shadow: 0px 0px 15px rgba(0,0,0,1);
 }
 
 .ibsmall{
