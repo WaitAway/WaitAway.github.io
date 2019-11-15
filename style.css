@@ -171,7 +171,7 @@ iframe{
 
 .navdot{
 	position:fixed;
-	border: 2px solid white;
+	border: 2px solid black;
 	left:100%;
 	border-radius:100%;
 	z-index:10;
@@ -181,11 +181,11 @@ iframe{
 }
 
 .navdot:hover{
-	background-color:white;
+	background-color:black;
 }
 
 .navdot.active{
-	background-color:white;
+	background-color:black;
 }
 
 #nd1{
@@ -294,7 +294,7 @@ section#instructions{
 	position:relative;
 	width:250px;
 	height:250px;
-	transform:translateX(-200px);
+	transform:translateX(-100px);
 	border-radius:50%;
 	background-image:linear-gradient(#4da765,#2f944a);
 	text-align: center;
@@ -311,13 +311,6 @@ section#instructions{
     -moz-box-shadow: 0px 0px 15px rgba(0,0,0,1);
     -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,1);
     -o-box-shadow: 0px 0px 15px rgba(0,0,0,1);
-}
-.ibsmall:hover{
-	
-		box-shadow: 0px 0px 15px rgba(0,0,0,1);
-		-moz-box-shadow: 0px 0px 15px rgba(0,0,0,1);
-		-webkit-box-shadow: 0px 0px 15px rgba(0,0,0,1);
-		-o-box-shadow: 0px 0px 15px rgba(0,0,0,1);
 }
 
 
@@ -358,23 +351,24 @@ section#instructions{
 }
 
 #ib1{
-	top:50px;
-	left:210px;
+	top:70px;
+	left:145px;
+	color:black;
 }
 
 #ib2{
-	top:80px;
-	left:480px;
+	top:100px;
+	left:380px;
 }
 
 #ib3{
-	top:-480px;
-	left:980px;
+	top:-450px;
+	left: 875px;
 }
 
 #ib4{
 	top:-450px;
-	left:1450px;
+	left:1350px;
 }
 
 #ib5{
@@ -384,17 +378,17 @@ section#instructions{
 /*725px;*/
 #ib6{
 	top:-605px;
-	left:750px;
+	left:660px;
 }
 /*-1205px;*/
 #ib7{
 	top: -900px; 
-	left:1175px;
+	left:1100px;
 }
 
 #ib8{
 	top:-805px;
-	left:1370px;
+	left:1270px;
 }
 
 /*--------------------------------------------------- SEARCH ----------------------------*/
@@ -413,6 +407,7 @@ section#search{
 		left:70%;
 		top:25%;
 		opacity:0;
+		z-index: -1;
 	}
 	
 	#form-div {
@@ -621,7 +616,7 @@ section#contact{
 	background-repeat: no-repeat;
 }
 
-section#contact img{
+.teampic{
 	width:218px;
 	height:218px;
 	border-radius:100%;
@@ -629,6 +624,14 @@ section#contact img{
     -moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
     -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
     -o-box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+    transition: .5s;
+}
+.teampic:hover{
+	transform: translateY(-15px);
+	box-shadow: 0px 0px 15px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 15px rgba(0,0,0,1);
+    -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,1);
+    -o-box-shadow: 0px 0px 15px rgba(0,0,0,1);
 }
 
 section table{
