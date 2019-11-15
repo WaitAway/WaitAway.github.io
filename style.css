@@ -53,7 +53,7 @@ body{
 
 #spinner{
 	position:absolute;
-	top:40%;
+	top:50%;
 	left:50%;
 	margin-top:-45px;
 	margin-left:-45px;
@@ -121,6 +121,7 @@ iframe{
 }
 .infobox p{
 	font-size:20px;
+
 }
 .infobox1{
 	border-radius: 25px;
@@ -131,8 +132,15 @@ iframe{
 	bottom:350px;
 	transform: translateY(-20%);
 }
+.infobox1 h1{
+	color: linear-gradient(rgba(112,184,255,1), rgba(82,134,186,1));
+}
+.infobox2 h1{
+	color: linear-gradient(rgba(112,184,255,1), rgba(82,134,186,1));
+}
 .infobox1 p{
 	font-size:15px;
+	color:black;
 }
 .infobox2{
 	border-radius: 25px;
@@ -145,6 +153,7 @@ iframe{
 }
 .infobox2 p{
 	font-size:15px;
+	color:black;
 }
 
 
@@ -269,7 +278,7 @@ section#home{
 /*--------------------------------------------------- INSTRUCTIONS ----------------------------*/
 
 section#instructions{
-	background-image: url("assets/img/blue.jpg");
+	background-image: url("assets/img/skyblue.jpg");
 	background-repeat:no-repeat;
 	background-size:cover;
 }
@@ -391,7 +400,11 @@ section#instructions{
 /*--------------------------------------------------- SEARCH ----------------------------*/
 
 section#search{
-	background-image:linear-gradient(#e8554d,#ab403a);
+	background-image: url("assets/img/white.pnj");
+	background-size: cover;
+	background-repeat: no-repeat;
+
+
 }
 
 	/*Registration form */
@@ -603,7 +616,9 @@ section#search{
 /*--------------------------------------------------- CONTACT ----------------------------*/
 
 section#contact{
-	background-image:linear-gradient(#d8de66,#a6ab4f);
+	background-image: url("assets/img/white.pnj");
+	background-size:cover;
+	background-repeat: no-repeat;
 }
 
 section#contact img{
@@ -624,7 +639,9 @@ section table{
 /*--------------------------------------------------- PRICING ----------------------------*/
 
 section#pricing{
-	background-image:linear-gradient(#aa6fed,#744ba3);
+	background-image: url("assets/img/blue.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;
 }
 
 .pricebox{
