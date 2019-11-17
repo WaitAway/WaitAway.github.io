@@ -17,6 +17,7 @@ function loadSpin(){
 
 function book(){
 	$("#form-main").animate({"opacity":"1"},100);
+	$("#form-main").css({"z-index":"1"});
 };
 
 $(document).ready(function(){
@@ -130,5 +131,6 @@ function showNav(){
 window.addEventListener('click', function(e){   
   if (!document.getElementById('form-main').contains(e.target)){
     $("#form-main").animate({"opacity":"0"},100);
+    $("#form-main").css({"z-index":"-1"});
   } 
 });

@@ -52,12 +52,12 @@ body{
 }
 
 #spinner{
-  position:absolute;
-  top:50%;
-  left:50%;
-  margin-top:-45px;
-  margin-left:-45px;
-  max-height:90px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-45px;
+	margin-left:-45px;
+	max-height:90px;
 }
 
 a, p{
@@ -84,6 +84,10 @@ h1{
 	text-align: center;
 }
 
+.h1 .title_shadow{
+	font-size:60px;
+}
+
 section{
 	/*Ensures every section is the height of the window*/
 	height: 100vh;
@@ -96,21 +100,66 @@ section{
 }
 
 iframe{
+	position:relative;
 	display:block;
 	border: 4px solid black;
 	border-radius:25px;
 	width:85%;
 	height:70vh;
 	margin: auto;
+	bottom:5%;
 }
 
+/*About pages changed the infobox size to refit */
 .infobox{
+	border-radius: 25px;
+	padding:14px 24px;
+	width:90%;
+	background-color:rgba(0,0,0,0.1);
+	margin: 0 auto;
+	transform: translateY(-15%);
+}
+.infobox p{
+	font-size:20px;
+
+}
+.infobox1{
 	border-radius: 25px;
 	padding:25px;
 	width:80%;
 	background-color:rgba(0,0,0,0.1);
-    margin: 0 auto;
+	margin: 0 auto;
+	bottom:350px;
+	transform: translateY(-20%);
 }
+.infobox1 h1{
+	color: linear-gradient(rgba(112,184,255,1), rgba(82,134,186,1));
+}
+.infobox2 h1{
+	color: linear-gradient(rgba(112,184,255,1), rgba(82,134,186,1));
+}
+.infobox1 p{
+	font-size:15px;
+	color:black;
+}
+.infobox2{
+	border-radius: 25px;
+	padding:25px;
+	width:80%;
+	background-color:rgba(0,0,0,0.1);
+	margin: 0 auto;
+	transform:translateY(-20%);
+	
+}
+.infobox2 p{
+	font-size:15px;
+	color:black;
+}
+
+
+
+
+
 
 .important{
 	text-transform: uppercase;
@@ -122,7 +171,7 @@ iframe{
 
 .navdot{
 	position:fixed;
-	border: 2px solid white;
+	border: 2px solid black;
 	left:100%;
 	border-radius:100%;
 	z-index:10;
@@ -132,11 +181,11 @@ iframe{
 }
 
 .navdot:hover{
-	background-color:white;
+	background-color:black;
 }
 
 .navdot.active{
-	background-color:white;
+	background-color:black;
 }
 
 #nd1{
@@ -179,7 +228,7 @@ section#home{
 	/*Aligns the title.*/
 	/*This section is a WIP*/
 	position:absolute;
-	top:12%;
+	top:16%;
 	left:51%;
 	transform: translateX(-50%);
 	
@@ -229,7 +278,9 @@ section#home{
 /*--------------------------------------------------- INSTRUCTIONS ----------------------------*/
 
 section#instructions{
-	background-image:linear-gradient(#4de876,#2f944a);
+	background-image: url("assets/img/skyblue.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
 }
 
 #lines{
@@ -245,7 +296,7 @@ section#instructions{
 	height:250px;
 	transform:translateX(-100px);
 	border-radius:50%;
-	background-image:linear-gradient(#4de876,#2f944a);
+	background-image:linear-gradient(#4da765,#2f944a);
 	text-align: center;
 	vertical-align: middle;
 	
@@ -254,6 +305,7 @@ section#instructions{
 	-webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.7);
 	-o-box-shadow: 0 5px 10px rgba(0,0,0,0.7);
 }
+
 
 .ibsmall{
 	width:75px;
@@ -293,48 +345,53 @@ section#instructions{
 
 #ib1{
 	top:70px;
-	left:150px;
+	left:145px;
+	color:black;
 }
 
 #ib2{
-	top:170px;
-	left:500px;
+	top:100px;
+	left:380px;
 }
 
 #ib3{
-	top:-480px;
-	left:950px;
+	top:-450px;
+	left: 875px;
 }
 
 #ib4{
-	top:-480px;
-	left:1450px;
+	top:-450px;
+	left:1350px;
 }
 
 #ib5{
-	top:-1105px;
-	left:150px;
+	top:-1030px;
+	left:350px;
 }
-
+/*725px;*/
 #ib6{
 	top:-605px;
-	left:725px;
+	left:660px;
 }
-
+/*-1205px;*/
 #ib7{
-	top:-1205px;
-	left:1175px;
+	top: -900px; 
+	left:1100px;
 }
 
 #ib8{
 	top:-805px;
-	left:1450px;
+	left:1270px;
 }
 
 /*--------------------------------------------------- SEARCH ----------------------------*/
 
 section#search{
-	background-image:linear-gradient(#e8554d,#ab403a);
+	background-image: url("assets/img/white.pnj");
+	background-size: cover;
+	background-repeat: no-repeat;
+
+
 }
 
 	/*Registration form */
@@ -343,6 +400,7 @@ section#search{
 		left:70%;
 		top:25%;
 		opacity:0;
+		z-index: -1;
 	}
 	
 	#form-div {
@@ -352,7 +410,7 @@ section#search{
 		padding-top:35px;
 		padding-bottom:50px;
 		width: 450px;
-		position:relative;
+		position:fixed;
 		left:110%;
 		top:5%;
 		transform: translate(-110%,-5%);
@@ -364,7 +422,7 @@ section#search{
 	
 	.feedback-input {
 		color:#3c3c3c;
-		font-family: Helvetica, Arial, sans-serif;
+		font-family: 'Arial Black', 'Archivo Black', 'Arial Bold', Gadget, sans-serif;
 		font-weight:500;
 		font-size: 18px;
 		border-radius: 0;
@@ -420,29 +478,29 @@ section#search{
 		background-repeat: no-repeat;
 	}
 	#name:focus{
-	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-	background-size: 30px 30px;
-	background-position: 8px 5px;
-	background-position: 11px 8px;
-	background-repeat: no-repeat;
+		background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+		background-size: 30px 30px;
+		background-position: 8px 5px;
+		background-position: 11px 8px;
+		background-repeat: no-repeat;
 	}
 	#email{
-	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-	background-size: 30px 30px;
-	background-position: 11px 8px;
-	background-repeat: no-repeat;
+		background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+		background-size: 30px 30px;
+		background-position: 11px 8px;
+		background-repeat: no-repeat;
 	}	
 	#email:focus{
-	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-	background-size: 30px 30px;
-	background-position: 11px 8px;
-	background-repeat: no-repeat;
+		background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+		background-size: 30px 30px;
+		background-position: 11px 8px;
+		background-repeat: no-repeat;
 	}
 	#comment{
-	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
-	background-size: 30px 30px;
-	background-position: 11px 8px;
-	background-repeat: no-repeat;
+		background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+		background-size: 30px 30px;
+		background-position: 11px 8px;
+		background-repeat: no-repeat;
 	}
 	#date{
 		background-image: url(https://img.icons8.com/small/16/000000/planner.png);
@@ -509,7 +567,7 @@ section#search{
 		background-color:white;
 	}
 	
-	@media only screen and (max-width: 580px) {
+	@media only screen and (max-width: 1000px) {
 	#form-div{
 		left: 3%;
 		margin-right: 3%;
@@ -546,10 +604,12 @@ section#search{
 /*--------------------------------------------------- CONTACT ----------------------------*/
 
 section#contact{
-	background-image:linear-gradient(#d8de66,#a6ab4f);
+	background-image: url("assets/img/white.pnj");
+	background-size:cover;
+	background-repeat: no-repeat;
 }
 
-section#contact img{
+.teampic{
 	width:218px;
 	height:218px;
 	border-radius:100%;
@@ -557,6 +617,14 @@ section#contact img{
     -moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
     -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
     -o-box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+    transition: .5s;
+}
+.teampic:hover{
+	transform: translateY(-15px);
+	box-shadow: 0px 0px 15px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 15px rgba(0,0,0,1);
+    -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,1);
+    -o-box-shadow: 0px 0px 15px rgba(0,0,0,1);
 }
 
 section table{
@@ -567,11 +635,13 @@ section table{
 /*--------------------------------------------------- PRICING ----------------------------*/
 
 section#pricing{
-	background-image:linear-gradient(#aa6fed,#744ba3);
+	background-image: url("assets/img/blue.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;
 }
 
 .pricebox{
-	width:33%
+	width:33%;
 }
 
 .gold{
