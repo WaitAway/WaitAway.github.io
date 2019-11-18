@@ -17,6 +17,7 @@ function loadSpin(){
 
 function book(){
 	$("#form-main").animate({"opacity":"1"},100);
+	$("#form-main").css({"z-index":"1"});
 };
 
 $(document).ready(function(){
@@ -46,7 +47,7 @@ $(document).ready(function(){
 					showNav();
 					canShowNav = true;
 					$("#loadbg").remove();
-					$("body").css({"overflow":"visible"});
+					$("body").css({"overflow-y":"visible"});
 					$("#title").css({"z-index":"3"});
 					$("#titlebutton").css({"z-index":"3"});
 					$("#title").animate({"opacity":"1"},100);
@@ -130,5 +131,6 @@ function showNav(){
 window.addEventListener('click', function(e){   
   if (!document.getElementById('form-main').contains(e.target)){
     $("#form-main").animate({"opacity":"0"},100);
+    $("#form-main").css({"z-index":"-1"});
   } 
 });

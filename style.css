@@ -18,9 +18,10 @@ body{
 	
 	/*By default, there's some page margin we don't want*/
 	margin: 0;
+	
 	/*Before the page is done loading, we don't want the user to be able to scroll*/
-	/*Change: Guy*/
-	overflow: hidden;
+	overflow-x: hidden; 
+	overflow-y: hidden; 
 	
 	scroll-behavior: smooth;
 }
@@ -52,12 +53,12 @@ body{
 }
 
 #spinner{
-  position:absolute;
-  top:50%;
-  left:50%;
-  margin-top:-45px;
-  margin-left:-45px;
-  max-height:90px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-45px;
+	margin-left:-45px;
+	max-height:90px;
 }
 
 a, p{
@@ -84,6 +85,10 @@ h1{
 	text-align: center;
 }
 
+.h1 .title_shadow{
+	font-size:60px;
+}
+
 section{
 	/*Ensures every section is the height of the window*/
 	height: 100vh;
@@ -96,20 +101,26 @@ section{
 }
 
 iframe{
+	position:relative;
 	display:block;
 	border: 4px solid black;
 	border-radius:25px;
 	width:85%;
 	height:70vh;
 	margin: auto;
+	bottom:5%;
+	min-width: 1265px;
 }
 
+/*About pages changed the infobox size to refit */
 .infobox{
 	border-radius: 25px;
-	padding:25px;
-	width:80%;
+	padding:14px 24px;
+	width:90%;
 	background-color:rgba(0,0,0,0.1);
-    margin: 0 auto;
+	margin: 0 auto;
+	transform: translateY(-15%);
+	font-size:20px;
 }
 
 .important{
@@ -179,7 +190,7 @@ section#home{
 	/*Aligns the title.*/
 	/*This section is a WIP*/
 	position:absolute;
-	top:12%;
+	top:15%;
 	left:51%;
 	transform: translateX(-50%);
 	
@@ -216,7 +227,7 @@ section#home{
 	/*This section is a WIP*/
 	position:absolute;
 	top:40%;
-	left:51.5%;
+	left:50%;
 	transform: translateX(-50%);
 	
 	box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
@@ -226,26 +237,46 @@ section#home{
 	border-radius:50px;
 }
 
+.media{
+	position:absolute;	
+	top:50%;
+	max-width:200px;
+	z-index:2;
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
+}
+
 /*--------------------------------------------------- INSTRUCTIONS ----------------------------*/
 
 section#instructions{
-	background-image:linear-gradient(#4de876,#2f944a);
+	background-image: linear-gradient(#5286BA,white);
 }
 
-#lines{
-	position:absolute;
-	top:116vh;
-	left:75px;
-	opacity:0.2;
+#icontent{
+	background-image: url("assets/img/linetest.png");
+	background-repeat:no-repeat;
+	background-position:100px 30px;
+	position:relative;
+	display:block;
+	border: 4px solid black;
+	border-radius:25px;
+	width:85%;
+	height:70vh;
+	margin: auto;
+	bottom:5%;
+	min-width: 1265px;
+	max-height: 80vh;
 }
 
-.ibsmall,.ibubble{
+.ibubble{
 	position:relative;
 	width:250px;
 	height:250px;
 	transform:translateX(-100px);
 	border-radius:50%;
-	background-image:linear-gradient(#4de876,#2f944a);
+	background-image:linear-gradient(#70B8FF,#568ec4);
 	text-align: center;
 	vertical-align: middle;
 	
@@ -253,23 +284,6 @@ section#instructions{
 	-moz-box-shadow: 0 5px 10px rgba(0,0,0,0.7);
 	-webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.7);
 	-o-box-shadow: 0 5px 10px rgba(0,0,0,0.7);
-}
-
-.ibsmall{
-	width:75px;
-	height:75px;
-	font-size:40px;
-	font-weight: bold;
-	
-	box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
-	-o-box-shadow: none;
-	
-	background-color:#41C664;
-	background-image:none;
-	
-	border: 1px solid black;
 }
 
 .ibtext{
@@ -311,245 +325,213 @@ section#instructions{
 	left:1450px;
 }
 
-#ib5{
-	top:-1105px;
-	left:150px;
-}
-
-#ib6{
-	top:-605px;
-	left:725px;
-}
-
-#ib7{
-	top:-1205px;
-	left:1175px;
-}
-
-#ib8{
-	top:-805px;
-	left:1450px;
-}
-
 /*--------------------------------------------------- SEARCH ----------------------------*/
 
 section#search{
-	background-image:linear-gradient(#e8554d,#ab403a);
+	background-image: url("assets/img/white.pnj");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-	/*Registration form */
-	#form-main{
-		position:fixed;
-		left:70%;
-		top:25%;
-		opacity:0;
-	}
-	
-	#form-div {
-		background-color:rgba(72,72,72,0.4);
-		padding-left:35px;
-		padding-right:35px;
-		padding-top:35px;
-		padding-bottom:50px;
-		width: 450px;
-		position:relative;
-		left:110%;
-		top:5%;
-		transform: translate(-110%,-5%);
-		margin-top:30px;
-		margin-left: -260px;
-		-moz-border-radius: 7px;
-		-webkit-border-radius: 7px;
-	}
-	
-	.feedback-input {
-		color:#3c3c3c;
-		font-family: Helvetica, Arial, sans-serif;
-		font-weight:500;
-		font-size: 18px;
-		border-radius: 0;
-		line-height: 22px;
-		background-color: #fbfbfb;
-		padding: 13px 13px 13px 54px;
-		margin-bottom: 10px;
-		width:100%;
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		-ms-box-sizing: border-box;
-		box-sizing: border-box;
-		border: 3px solid rgba(0,0,0,0);
-	}
-	
-	.feedback-input:focus{
-		background: #fff;
-		box-shadow: 0;
-		border: 3px solid #3498db;
-		color: #3498db;
-		outline: none;
-		padding: 13px 13px 13px 54px;
-	}
-	
-	.focused{
-		color:#30aed6;
-		border:#30aed6 solid 3px;
-	}
-	
-	#name{
-		background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-		background-size: 30px 30px;
-		background-position: 11px 8px;
-		background-repeat: no-repeat;
-	}
-	#location{
-		background-image: url(https://img.icons8.com/ios-filled/50/000000/worldwide-location.png);
-		background-size: 30px 30px;
-		background-position: 11px 8px;
-		background-repeat: no-repeat;
-	}
-	#phone{
-		background-image: url(https://img.icons8.com/metro/26/000000/phone.png);
-		background-size: 30px 30px;
-		background-position: 11px 8px;
-		background-repeat: no-repeat;
-	}
-	#phone:focus{
-		background-image: url(https://img.icons8.com/metro/26/000000/phone.png);
-		background-size: 30px 30px;
-		background-position: 8px 5px;
-	 	background-position: 11px 8px;
-		background-repeat: no-repeat;
-	}
-	#name:focus{
+/*Registration form */
+#form-main{
+	position:fixed;
+	left:70%;
+	top:25%;
+	opacity:0;
+	z-index: -1;
+}
+
+#form-div {
+	background-color:rgba(72,72,72,0.4);
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 450px;
+	position:fixed;
+	left:110%;
+	top:5%;
+	transform: translate(-110%,-5%);
+	margin-top:30px;
+	margin-left: -260px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+}
+
+.feedback-input {
+	color:#3c3c3c;
+	font-family: 'Arial Black', 'Archivo Black', 'Arial Bold', Gadget, sans-serif;
+	font-weight:500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #3498db;
+	color: #3498db;
+	outline: none;
+	padding: 13px 13px 13px 54px;
+}
+
+.focused{
+	color:#30aed6;
+	border:#30aed6 solid 3px;
+}
+
+#name{
 	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
 	background-size: 30px 30px;
-	background-position: 8px 5px;
 	background-position: 11px 8px;
 	background-repeat: no-repeat;
-	}
-	#email{
+}
+
+#location{
+	background-image: url(https://img.icons8.com/ios-filled/50/000000/worldwide-location.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#phone{
+	background-image: url(https://img.icons8.com/metro/26/000000/phone.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email{
 	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
 	background-size: 30px 30px;
 	background-position: 11px 8px;
 	background-repeat: no-repeat;
-	}	
-	#email:focus{
-	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-	background-size: 30px 30px;
-	background-position: 11px 8px;
-	background-repeat: no-repeat;
-	}
-	#comment{
+}
+	
+#comment{
 	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
 	background-size: 30px 30px;
 	background-position: 11px 8px;
 	background-repeat: no-repeat;
-	}
-	#date{
-		background-image: url(https://img.icons8.com/small/16/000000/planner.png);
-		background-size: 30px 30px;
-		background-position: 11px 8px;
-		background-repeat: no-repeat;
-	}
-	
-	textarea {
-		width: 100%;
-		height: 150px;
-		line-height: 150%;
-		resize:vertical;
-	}
-	
-	input:hover, textarea:hover,
-	input:focus, textarea:focus {
-		background-color:white;
-	}
-	
-	#button-blue{
-		font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-		float:left;
-		width: 100%;
-		border: #fbfbfb solid 4px;
-		cursor:pointer;
-		background-color: #3498db;
-		color:white;
-		font-size:24px;
-		padding-top:22px;
-		padding-bottom:22px;
-		border-radius:40px;
-		-webkit-transition: all 0.3s;
-		-moz-transition: all 0.3s;
-		transition: all 0.3s;
-		margin-top:-4px;
-		font-weight:700;
-	}
-	
-	#button-blue:hover{
-		background-color: rgba(0,0,0,0);
-		color: #0493bd;
-		border-radius:40px;
-	}
-	
-	.submit:hover {
-		color: #3498db;
-	}
-	
-	.ease {
-		width: 0px;
-		height: 74px;
-		border-radius: 40px;
-		background-color: #fbfbfb;
-		-webkit-transition: .3s ease;
-		-moz-transition: .3s ease;
-		-o-transition: .3s ease;
-		-ms-transition: .3s ease;
-		transition: .3s ease;
-	}
-	
-	.submit:hover .ease{
-		width:100%;
-		background-color:white;
-	}
-	
-	@media only screen and (max-width: 580px) {
-	#form-div{
-		left: 3%;
-		margin-right: 3%;
-		width: 88%;
-		margin-left: 0;
-		padding-left: 3%;
-		padding-right: 3%;
-	}
-	}
-	.form-main .title{
-		font-weight:400;
-		font-size:13px;
-		color:black;
+}
 
-	}
+#date{
+	background-image: url(https://img.icons8.com/small/16/000000/planner.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
 
-	.card {
-		position:relative;
-		width: 5%;
-		height:40%;
-		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-		transition: 0.3s;
-		width: 40%;
-	  }
-	  
-	.card:hover {
-		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-	}
-	  
-	.container {
-		padding: 2px 16px;
-	}
+textarea {
+	width: 100%;
+	height: 150px;
+	line-height: 150%;
+	resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+
+#button-blue{
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	float:left;
+	width: 100%;
+	border: #fbfbfb solid 4px;
+	cursor:pointer;
+	background-color: #3498db;
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	border-radius:40px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	margin-top:-4px;
+	font-weight:700;
+}
+
+#button-blue:hover{
+	background-color: rgba(0,0,0,0);
+	color: #0493bd;
+	border-radius:40px;
+}
+
+.submit:hover {
+	color: #3498db;
+}
+
+.ease {
+	width: 0px;
+	height: 74px;
+	border-radius: 40px;
+	background-color: #fbfbfb;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.submit:hover .ease{
+	width:100%;
+	background-color:white;
+}
+
+@media only screen and (max-width: 1000px) {
+#form-div{
+	left: 3%;
+	margin-right: 3%;
+	width: 88%;
+	margin-left: 0;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+}
+.form-main .title{
+	font-weight:400;
+	font-size:13px;
+	color:black;
+
+}
+
+.card {
+	position:relative;
+	width: 5%;
+	height:40%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	width: 40%;
+  }
+  
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  
+.container {
+	padding: 2px 16px;
+}
 
 /*--------------------------------------------------- CONTACT ----------------------------*/
 
 section#contact{
-	background-image:linear-gradient(#d8de66,#a6ab4f);
+	background-image: linear-gradient(white,#5286BA);
 }
 
-section#contact img{
+.teampic{
 	width:218px;
 	height:218px;
 	border-radius:100%;
@@ -557,6 +539,14 @@ section#contact img{
     -moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
     -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
     -o-box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+    transition: .5s;
+}
+.teampic:hover{
+	transform: translateY(-15px);
+	box-shadow: 0px 0px 15px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 15px rgba(0,0,0,1);
+    -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,1);
+    -o-box-shadow: 0px 0px 15px rgba(0,0,0,1);
 }
 
 section table{
@@ -567,11 +557,13 @@ section table{
 /*--------------------------------------------------- PRICING ----------------------------*/
 
 section#pricing{
-	background-image:linear-gradient(#aa6fed,#744ba3);
+	background-image: url("assets/img/blue.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;
 }
 
 .pricebox{
-	width:33%
+	width:33%;
 }
 
 .gold{
@@ -597,16 +589,13 @@ footer{
 
 .fa {
     padding: 20px;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     color: #fff;
-    margin: 0 10px;
+	margin: auto 10px;
 	text-align: center;
 	box-shadow: 0 5px 5px grey;
-    position: relative;
-	top:480px;
-	left:720px;
 	opacity:0;
 	z-index:3;
 }
@@ -615,21 +604,6 @@ footer{
     color: #fff;
     text-decoration: none;
     box-shadow: 0 5px 15px grey
-}
-
-.fa-transform-fb {
-    right: 6px;
-    bottom: 9px;
-}
-
-.fa-transform-li {
-    right: 7.25px;
-    bottom: 9px;
-}
-
-.fa-transform-ig {
-    right: 8px;
-    bottom: 9px;
 }
 
 .fb {

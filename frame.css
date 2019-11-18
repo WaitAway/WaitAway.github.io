@@ -67,6 +67,9 @@
 .card6{
 	background-image: url("assets/img/clinic6.jpg");
 }
+.card7{
+	background-image: url("assets/img/clinic7.jpg");
+}
 
 #uni{
 	display:inline;
@@ -135,7 +138,6 @@ h1{
 	font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 }
 .searchbox 	{
-	width:100%;
 	position: relative;
 	left:5%;
 	bottom:1%;
