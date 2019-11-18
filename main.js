@@ -47,7 +47,7 @@ $(document).ready(function(){
 					showNav();
 					canShowNav = true;
 					$("#loadbg").remove();
-					$("body").css({"overflow":"visible"});
+					$("body").css({"overflow-y":"visible"});
 					$("#title").css({"z-index":"3"});
 					$("#titlebutton").css({"z-index":"3"});
 					$("#title").animate({"opacity":"1"},100);

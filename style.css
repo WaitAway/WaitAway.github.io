@@ -18,9 +18,10 @@ body{
 	
 	/*By default, there's some page margin we don't want*/
 	margin: 0;
+	
 	/*Before the page is done loading, we don't want the user to be able to scroll*/
-	/*Change: Guy*/
-	overflow: hidden;
+	overflow-x: hidden; 
+	overflow-y: hidden; 
 	
 	scroll-behavior: smooth;
 }
@@ -108,6 +109,7 @@ iframe{
 	height:70vh;
 	margin: auto;
 	bottom:5%;
+	min-width: 1265px;
 }
 
 /*About pages changed the infobox size to refit */
@@ -118,48 +120,8 @@ iframe{
 	background-color:rgba(0,0,0,0.1);
 	margin: 0 auto;
 	transform: translateY(-15%);
-}
-.infobox p{
 	font-size:20px;
-
 }
-.infobox1{
-	border-radius: 25px;
-	padding:25px;
-	width:80%;
-	background-color:rgba(0,0,0,0.1);
-	margin: 0 auto;
-	bottom:350px;
-	transform: translateY(-20%);
-}
-.infobox1 h1{
-	color: linear-gradient(rgba(112,184,255,1), rgba(82,134,186,1));
-}
-.infobox2 h1{
-	color: linear-gradient(rgba(112,184,255,1), rgba(82,134,186,1));
-}
-.infobox1 p{
-	font-size:15px;
-	color:black;
-}
-.infobox2{
-	border-radius: 25px;
-	padding:25px;
-	width:80%;
-	background-color:rgba(0,0,0,0.1);
-	margin: 0 auto;
-	transform:translateY(-20%);
-	
-}
-.infobox2 p{
-	font-size:15px;
-	color:black;
-}
-
-
-
-
-
 
 .important{
 	text-transform: uppercase;
@@ -171,7 +133,7 @@ iframe{
 
 .navdot{
 	position:fixed;
-	border: 2px solid black;
+	border: 2px solid white;
 	left:100%;
 	border-radius:100%;
 	z-index:10;
@@ -181,11 +143,11 @@ iframe{
 }
 
 .navdot:hover{
-	background-color:black;
+	background-color:white;
 }
 
 .navdot.active{
-	background-color:black;
+	background-color:white;
 }
 
 #nd1{
@@ -228,7 +190,7 @@ section#home{
 	/*Aligns the title.*/
 	/*This section is a WIP*/
 	position:absolute;
-	top:16%;
+	top:15%;
 	left:51%;
 	transform: translateX(-50%);
 	
@@ -265,7 +227,7 @@ section#home{
 	/*This section is a WIP*/
 	position:absolute;
 	top:40%;
-	left:51.5%;
+	left:50%;
 	transform: translateX(-50%);
 	
 	box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
@@ -275,28 +237,46 @@ section#home{
 	border-radius:50px;
 }
 
+.media{
+	position:absolute;	
+	top:50%;
+	max-width:200px;
+	z-index:2;
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
+}
+
 /*--------------------------------------------------- INSTRUCTIONS ----------------------------*/
 
 section#instructions{
-	background-image: url("assets/img/skyblue.jpg");
+	background-image: linear-gradient(#5286BA,white);
+}
+
+#icontent{
+	background-image: url("assets/img/linetest.png");
 	background-repeat:no-repeat;
-	background-size:cover;
+	background-position:100px 30px;
+	position:relative;
+	display:block;
+	border: 4px solid black;
+	border-radius:25px;
+	width:85%;
+	height:70vh;
+	margin: auto;
+	bottom:5%;
+	min-width: 1265px;
+	max-height: 80vh;
 }
 
-#lines{
-	position:absolute;
-	top:116vh;
-	left:75px;
-	opacity:0.2;
-}
-
-.ibsmall,.ibubble{
+.ibubble{
 	position:relative;
 	width:250px;
 	height:250px;
 	transform:translateX(-100px);
 	border-radius:50%;
-	background-image:linear-gradient(#4da765,#2f944a);
+	background-image:linear-gradient(#70B8FF,#568ec4);
 	text-align: center;
 	vertical-align: middle;
 	
@@ -304,24 +284,6 @@ section#instructions{
 	-moz-box-shadow: 0 5px 10px rgba(0,0,0,0.7);
 	-webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.7);
 	-o-box-shadow: 0 5px 10px rgba(0,0,0,0.7);
-}
-
-
-.ibsmall{
-	width:75px;
-	height:75px;
-	font-size:40px;
-	font-weight: bold;
-	
-	box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
-	-o-box-shadow: none;
-	
-	background-color:#41C664;
-	background-image:none;
-	
-	border: 1px solid black;
 }
 
 .ibtext{
@@ -345,43 +307,22 @@ section#instructions{
 
 #ib1{
 	top:70px;
-	left:145px;
-	color:black;
+	left:150px;
 }
 
 #ib2{
-	top:100px;
-	left:380px;
+	top:170px;
+	left:500px;
 }
 
 #ib3{
-	top:-450px;
-	left: 875px;
+	top:-480px;
+	left:950px;
 }
 
 #ib4{
-	top:-450px;
-	left:1350px;
-}
-
-#ib5{
-	top:-1030px;
-	left:350px;
-}
-/*725px;*/
-#ib6{
-	top:-605px;
-	left:660px;
-}
-/*-1205px;*/
-#ib7{
-	top: -900px; 
-	left:1100px;
-}
-
-#ib8{
-	top:-805px;
-	left:1270px;
+	top:-480px;
+	left:1450px;
 }
 
 /*--------------------------------------------------- SEARCH ----------------------------*/
@@ -390,223 +331,204 @@ section#search{
 	background-image: url("assets/img/white.pnj");
 	background-size: cover;
 	background-repeat: no-repeat;
+}
 
+/*Registration form */
+#form-main{
+	position:fixed;
+	left:70%;
+	top:25%;
+	opacity:0;
+	z-index: -1;
+}
+
+#form-div {
+	background-color:rgba(72,72,72,0.4);
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 450px;
+	position:fixed;
+	left:110%;
+	top:5%;
+	transform: translate(-110%,-5%);
+	margin-top:30px;
+	margin-left: -260px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+}
+
+.feedback-input {
+	color:#3c3c3c;
+	font-family: 'Arial Black', 'Archivo Black', 'Arial Bold', Gadget, sans-serif;
+	font-weight:500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #3498db;
+	color: #3498db;
+	outline: none;
+	padding: 13px 13px 13px 54px;
+}
+
+.focused{
+	color:#30aed6;
+	border:#30aed6 solid 3px;
+}
+
+#name{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#location{
+	background-image: url(https://img.icons8.com/ios-filled/50/000000/worldwide-location.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#phone{
+	background-image: url(https://img.icons8.com/metro/26/000000/phone.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+	
+#comment{
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#date{
+	background-image: url(https://img.icons8.com/small/16/000000/planner.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+textarea {
+	width: 100%;
+	height: 150px;
+	line-height: 150%;
+	resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+
+#button-blue{
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	float:left;
+	width: 100%;
+	border: #fbfbfb solid 4px;
+	cursor:pointer;
+	background-color: #3498db;
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	border-radius:40px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	margin-top:-4px;
+	font-weight:700;
+}
+
+#button-blue:hover{
+	background-color: rgba(0,0,0,0);
+	color: #0493bd;
+	border-radius:40px;
+}
+
+.submit:hover {
+	color: #3498db;
+}
+
+.ease {
+	width: 0px;
+	height: 74px;
+	border-radius: 40px;
+	background-color: #fbfbfb;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.submit:hover .ease{
+	width:100%;
+	background-color:white;
+}
+
+@media only screen and (max-width: 1000px) {
+#form-div{
+	left: 3%;
+	margin-right: 3%;
+	width: 88%;
+	margin-left: 0;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+}
+.form-main .title{
+	font-weight:400;
+	font-size:13px;
+	color:black;
 
 }
 
-	/*Registration form */
-	#form-main{
-		position:fixed;
-		left:70%;
-		top:25%;
-		opacity:0;
-		z-index: -1;
-	}
-	
-	#form-div {
-		background-color:rgba(72,72,72,0.4);
-		padding-left:35px;
-		padding-right:35px;
-		padding-top:35px;
-		padding-bottom:50px;
-		width: 450px;
-		position:fixed;
-		left:110%;
-		top:5%;
-		transform: translate(-110%,-5%);
-		margin-top:30px;
-		margin-left: -260px;
-		-moz-border-radius: 7px;
-		-webkit-border-radius: 7px;
-	}
-	
-	.feedback-input {
-		color:#3c3c3c;
-		font-family: 'Arial Black', 'Archivo Black', 'Arial Bold', Gadget, sans-serif;
-		font-weight:500;
-		font-size: 18px;
-		border-radius: 0;
-		line-height: 22px;
-		background-color: #fbfbfb;
-		padding: 13px 13px 13px 54px;
-		margin-bottom: 10px;
-		width:100%;
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		-ms-box-sizing: border-box;
-		box-sizing: border-box;
-		border: 3px solid rgba(0,0,0,0);
-	}
-	
-	.feedback-input:focus{
-		background: #fff;
-		box-shadow: 0;
-		border: 3px solid #3498db;
-		color: #3498db;
-		outline: none;
-		padding: 13px 13px 13px 54px;
-	}
-	
-	.focused{
-		color:#30aed6;
-		border:#30aed6 solid 3px;
-	}
-	
-	#name{
-		background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-		background-size: 30px 30px;
-		background-position: 11px 8px;
-		background-repeat: no-repeat;
-	}
-	#location{
-		background-image: url(https://img.icons8.com/ios-filled/50/000000/worldwide-location.png);
-		background-size: 30px 30px;
-		background-position: 11px 8px;
-		background-repeat: no-repeat;
-	}
-	#phone{
-		background-image: url(https://img.icons8.com/metro/26/000000/phone.png);
-		background-size: 30px 30px;
-		background-position: 11px 8px;
-		background-repeat: no-repeat;
-	}
-	#phone:focus{
-		background-image: url(https://img.icons8.com/metro/26/000000/phone.png);
-		background-size: 30px 30px;
-		background-position: 8px 5px;
-	 	background-position: 11px 8px;
-		background-repeat: no-repeat;
-	}
-	#name:focus{
-		background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-		background-size: 30px 30px;
-		background-position: 8px 5px;
-		background-position: 11px 8px;
-		background-repeat: no-repeat;
-	}
-	#email{
-		background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-		background-size: 30px 30px;
-		background-position: 11px 8px;
-		background-repeat: no-repeat;
-	}	
-	#email:focus{
-		background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-		background-size: 30px 30px;
-		background-position: 11px 8px;
-		background-repeat: no-repeat;
-	}
-	#comment{
-		background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
-		background-size: 30px 30px;
-		background-position: 11px 8px;
-		background-repeat: no-repeat;
-	}
-	#date{
-		background-image: url(https://img.icons8.com/small/16/000000/planner.png);
-		background-size: 30px 30px;
-		background-position: 11px 8px;
-		background-repeat: no-repeat;
-	}
-	
-	textarea {
-		width: 100%;
-		height: 150px;
-		line-height: 150%;
-		resize:vertical;
-	}
-	
-	input:hover, textarea:hover,
-	input:focus, textarea:focus {
-		background-color:white;
-	}
-	
-	#button-blue{
-		font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-		float:left;
-		width: 100%;
-		border: #fbfbfb solid 4px;
-		cursor:pointer;
-		background-color: #3498db;
-		color:white;
-		font-size:24px;
-		padding-top:22px;
-		padding-bottom:22px;
-		border-radius:40px;
-		-webkit-transition: all 0.3s;
-		-moz-transition: all 0.3s;
-		transition: all 0.3s;
-		margin-top:-4px;
-		font-weight:700;
-	}
-	
-	#button-blue:hover{
-		background-color: rgba(0,0,0,0);
-		color: #0493bd;
-		border-radius:40px;
-	}
-	
-	.submit:hover {
-		color: #3498db;
-	}
-	
-	.ease {
-		width: 0px;
-		height: 74px;
-		border-radius: 40px;
-		background-color: #fbfbfb;
-		-webkit-transition: .3s ease;
-		-moz-transition: .3s ease;
-		-o-transition: .3s ease;
-		-ms-transition: .3s ease;
-		transition: .3s ease;
-	}
-	
-	.submit:hover .ease{
-		width:100%;
-		background-color:white;
-	}
-	
-	@media only screen and (max-width: 1000px) {
-	#form-div{
-		left: 3%;
-		margin-right: 3%;
-		width: 88%;
-		margin-left: 0;
-		padding-left: 3%;
-		padding-right: 3%;
-	}
-	}
-	.form-main .title{
-		font-weight:400;
-		font-size:13px;
-		color:black;
-
-	}
-
-	.card {
-		position:relative;
-		width: 5%;
-		height:40%;
-		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-		transition: 0.3s;
-		width: 40%;
-	  }
-	  
-	.card:hover {
-		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-	}
-	  
-	.container {
-		padding: 2px 16px;
-	}
+.card {
+	position:relative;
+	width: 5%;
+	height:40%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	width: 40%;
+  }
+  
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  
+.container {
+	padding: 2px 16px;
+}
 
 /*--------------------------------------------------- CONTACT ----------------------------*/
 
 section#contact{
-	background-image: url("assets/img/white.pnj");
-	background-size:cover;
-	background-repeat: no-repeat;
+	background-image: linear-gradient(white,#5286BA);
 }
 
 .teampic{
@@ -667,16 +589,13 @@ footer{
 
 .fa {
     padding: 20px;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     color: #fff;
-    margin: 0 10px;
+	margin: auto 10px;
 	text-align: center;
 	box-shadow: 0 5px 5px grey;
-    position: relative;
-	top:480px;
-	left:720px;
 	opacity:0;
 	z-index:3;
 }
@@ -685,21 +604,6 @@ footer{
     color: #fff;
     text-decoration: none;
     box-shadow: 0 5px 15px grey
-}
-
-.fa-transform-fb {
-    right: 6px;
-    bottom: 9px;
-}
-
-.fa-transform-li {
-    right: 7.25px;
-    bottom: 9px;
-}
-
-.fa-transform-ig {
-    right: 8px;
-    bottom: 9px;
 }
 
 .fb {
