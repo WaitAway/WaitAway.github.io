@@ -129,6 +129,7 @@ iframe{
 	margin: 0 auto;
 	transform: translateY(-15%);
 	font-size:20px;
+	font-weight: normal;
 }
 
 .important{
