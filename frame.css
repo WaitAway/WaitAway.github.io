@@ -157,12 +157,13 @@ h1{
 	font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 }
 
-.searchbox 	{
+.searchbox{
 	position:absolute;
     top:0; 
 	bottom:0;
     margin: auto 25px ;
 	width: 45%;
+	height:50px;
 	padding: 12px 10px;
 	border:1px solid gray;
 	font-size: 18px;
