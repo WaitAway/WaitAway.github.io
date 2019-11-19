@@ -413,13 +413,12 @@ section#search{
 	background-repeat: no-repeat;
 }
 
-/*Registration form */
 #form-main{
 	position:fixed;
-	left:70%;
-	top:25%;
+	left:50%;
+	top:15%;
 	opacity:0;
-	z-index: -1;
+	z-index:-1;
 }
 
 #form-div {
@@ -429,10 +428,6 @@ section#search{
 	padding-top:35px;
 	padding-bottom:50px;
 	width: 450px;
-	position:fixed;
-	left:110%;
-	top:5%;
-	transform: translate(-110%,-5%);
 	margin-top:30px;
 	margin-left: -260px;
 	-moz-border-radius: 7px;
