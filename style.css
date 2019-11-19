@@ -574,7 +574,7 @@ input:focus, textarea:focus {
 
 @media only screen and (max-width: 1000px) {
 #form-div{
-	left: 3%;
+	left: 5%;
 	margin-right: 3%;
 	width: 88%;
 	margin-left: 0;
@@ -586,7 +586,6 @@ input:focus, textarea:focus {
 	font-weight:400;
 	font-size:13px;
 	color:black;
-
 }
 
 .card {
