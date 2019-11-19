@@ -155,9 +155,6 @@ window.addEventListener('click', function(e){
 
 var isBlack = false;
 $(window).scroll(function() {
-   $("#form-main").animate({"opacity":"0"},100);
-   $("#form-main").css({"z-index":"-1"});
-   
    var p = $(this).scrollTop()/$(document).height();
    if (p > 0.28 && p < 0.55){
        if(!isBlack){
