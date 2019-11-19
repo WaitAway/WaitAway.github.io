@@ -11,6 +11,21 @@
 	overflow:hidden;
 }
 
+.searchcontainer{
+	background-color:white;
+	position:fixed;
+	margin:0;
+	top:0px;
+	left:0px;
+	width: 50%;
+	height:70px;
+	
+	box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
+    -o-box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
+}
+
 .cardcontainer{
 	background-image: url("assets/img/cardtile.png");
 	border-radius:40px;
@@ -42,6 +57,10 @@
     background-repeat: no-repeat;
 	background-size: 40% 140%;
 	background-position: 105% 0%;
+}
+
+#first{
+	margin-top:90px;
 }
 
 .card1{
@@ -137,56 +156,49 @@ h1{
 	margin-bottom:0;
 	font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 }
-.searchbox 	{
-	position: relative;
-	left:5%;
-	bottom:1%;
-	transform: translate(-5%,-1%);
-	place-content: white;
-	width: 20%;
-	padding: 12px 24px;
-	border-color:rgb(12, 12, 192);
-	border:1px solid;
-	background-color: transparent;
-	-webkit-transition: width 250ms;
-	transition: width 250ms;
-	font-size: 18px;
-	line-height: 18px;	
-	color: #000000;
-	background-color: transparent;
-/*Search icon taken from mihaeltomic*/
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
-	background-repeat: no-repeat;
-	background-size: 18px 18px;
-	background-position: 95% center;
-	border-radius: 50px;
-	transition: all  width 250ms;
-	backface-visibility: hidden;
-	transform-style: preserve-3d;
 
-}
-.searchbox::placeholder {
-            color: #d3d2d8;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-        }
-        
-.searchbox:hover,.searchbox:after{
-			
+.searchbox 	{
+	position:absolute;
+    top:0; 
+	bottom:0;
+    margin: auto 25px ;
+	width: 45%;
 	padding: 12px 10px;
-    outline: 0;
-    border-radius: 50px;
-	background-position: 95% center;
-	width:30%;
-	
-}
-.searchbox:focus {
-	padding: 12px 10px;
-	outline: 0;
+	border:1px solid gray;
+	font-size: 18px;
 	border-radius: 50px;
-	background-position: 95% center;
-	width:30%;       
-		}
+	font-family: 'Forum', cursive;
+}
+
+.searchbox::placeholder {
+    color: #d3d2d8;
+}
+
+.searchbutton{
+	background-color:white;
+	position:absolute;
+    top:0; 
+	bottom:0;
+    margin: auto;
+	margin-left:calc(50% + 10px);
+	width: 50px;
+	height:50px;
+	padding: 12px 10px;
+	border:1px solid gray;
+	border-radius: 50px;
+	cursor: pointer;
+	transition:.5s;
+}
+
+.searchbutton:hover{
+	background-color:#E9E9E9;
+}
+
+img{
+	width:25px;
+	height:25px;
+}
+
 .search_title {
 	display:inline-block;
 	font-weight: 900;

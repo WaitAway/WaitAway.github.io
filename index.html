@@ -17,6 +17,9 @@
 		<script src="jquery-3.4.1.min.js"></script> <!--Currently doesn't work, to be fixed-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="main.js"></script> 
+		
+		<!-- Mobile Users Redirection-->
+		<link rel="alternate" media="handheld" href="mobile.html">
 	</head>
 	
 	
@@ -55,13 +58,10 @@
 				<h1 class="title_shadow">GETTING STARTED</h1>
 				<br><br>
 				<div id="icontent">
-					<div id="ib1" class="ibubble">
-						<p class="ibtext">Choose a location</p>
-						<a href="#search"><div class="button" id="ibbutton">Click here!</div></a>
-					</div>
-					<div id="ib2" class="ibubble"><p class="ibtext">Enter your info</p></div>
-					<div id="ib3" class="ibubble"><p class="ibtext">Select date and time</p></div>
-					<div id="ib4" class="ibubble"><p class="ibtext">Stay notified about<br>your appointment!</p></div>
+					<a href="#search"><div id="ib1" class="ibubble"><p class="ibtext"></p><span id="ib1custom"></span></div></a>
+					<div id="ib2" class="ibubble"><p class="ibtext"></p></div>
+					<div id="ib3" class="ibubble"><p class="ibtext"></p></div>
+					<div id="ib4" class="ibubble"><p class="ibtext"></p></div>
 				</div>
 			</section>
 
@@ -164,7 +164,7 @@
 						<th>
 							<div class="infobox">
 								<h1>About Us</h1>
-								<p style="text-align: justify;">We are 5 students from The University of Ottawa and we have decided to solve an issue plaguing us and the rest of Canada for years, waiting in clinics. There are better things you can do with your time, instead of waiting at a clinic, you can do some shopping, get food etc. We have designed an app that works with your clinic to put you in a virtual waiting room instead of a real one while displaying an accurate wait time so you can do what's important, it is called <span class="important">WaitAway</span>.</p>
+								<p style="text-align: justify;">We are 5 students from the University of Ottawa and we have decided to solve an issue plaguing us and the rest of Canada for years, waiting in clinics. There are better things you can do with your time, instead of waiting at a clinic, you can do some shopping, get food etc. We have designed an app that works with your clinic to put you in a virtual waiting room instead of a real one while displaying an accurate wait time so you can do what's important, it is called <span class="important">WaitAway</span>.</p>
 							</div>
 						</th>
 						
@@ -184,30 +184,30 @@
 					<h1>Are you a patient?</h1><br>
 					<center><p>It's<span class="important">free</span>!<br>This service is completely free to use and does not collect any information.<br>We will, however, show you non-intrusive advertisements.</p></center>
 				</div>
-				<br>
+				<br><br><br><br>
 				<div class="infobox">
 					<h1>Are you a clinic?</h1>
-					<center><p>Setting up shop in <span class="impotant">WaitAway</span> is easy, fast and tailored to your needs!</p></center><br>
+					<center><p>Setting up shop in <span class="impotant">WaitAway</span> is easy, fast and tailored to your needs!</p></center><br><br><br>
 					<table>
 						<tr>
 							<th class="pricebox">
 								<div class="infobox">
-									<h1>Monthly Subscription</h1>
-									<center><p>10$ per month</p></center><br>
+									<h1>Monthly<br>Subscription</h1>
+									<center><p>9.99$ per month</p></center><br>
 									<a href="secret.html"><div class="button">BUY NOW</div></a>
 								</div>
 							</th>
 							<th class="pricebox">
 								<div class="infobox">
-									<h1>Yearly Subscription</h1>
-									<center><p>100$ per year</p></center><br>
+									<h1>Yearly<br>Subscription</h1>
+									<center><p>99.99$ per year</p></center><br>
 									<a href="secret.html"><div class="button gold">BUY NOW</div></a>
 								</div>
 							</th>
 							<th class="pricebox">
 								<div class="infobox">
-									<h1>Lifetime Subscription</h1>
-									<center><p>Only 200$!</p></center><br>
+									<h1>Lifetime<br>Subscription</h1>
+									<center><p>Only 199.99$!</p></center><br>
 									<a href="secret.html" target="_blank"><div class="button">BUY NOW</div></a>
 								</div>
 							</th>

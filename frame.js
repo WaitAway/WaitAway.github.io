@@ -5,6 +5,8 @@ var marker3;
 var marker4;
 var marker5;
 var marker6;
+var markers = new Array;
+
 function initMap() {
 	map = new google.maps.Map(
 		document.getElementById('map'), {zoom: 13, center: {lat: 45.419642, lng: -75.69}});
@@ -14,6 +16,13 @@ function initMap() {
 	marker4 = new google.maps.Marker({position: {lat: 45.42987, lng: -75.718744}, map: map});
 	marker5 = new google.maps.Marker({position: {lat: 45.4221, lng: -75.6823}, map: map});
 	marker6 = new google.maps.Marker({position: {lat: 45.4015, lng: -75.648}, map: map});
+	
+	markers.push(marker1);
+	markers.push(marker2);
+	markers.push(marker3);
+	markers.push(marker4);
+	markers.push(marker5);
+	markers.push(marker6);
 }
 
 
@@ -43,3 +52,7 @@ $(document).ready(function(){
 		map.panTo(marker6.getPosition());
 	});
 });
+
+function search(){
+	map.panTo(markers[Math.floor(Math.random()*markers.length)].getPosition());
+}

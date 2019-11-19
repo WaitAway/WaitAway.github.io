@@ -11,8 +11,13 @@
 	<body style="background-color:white">
 
 		<div id="mapcontainer"><div id="map"></div></div>
-		<input type ="search" class ="searchbox" name ="name"  placeholder="Search">
-		<div onclick="parent.book();" class="cardcontainer"><div class="card card1">
+		
+		<div class="searchcontainer">
+			<input type="search" class="searchbox" name="name" placeholder="Search here...">
+			<button type="submit" class="searchbutton" onclick="search();"><img src="assets/img/search.png"/></button>
+		</div>
+		
+		<div onclick="parent.book();" class="cardcontainer" id="first"><div class="card card1">
 			<h1>Dr. John's Clinic</h1>
 			<table class="content">
 				<tr>
