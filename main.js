@@ -30,7 +30,7 @@ $(document).ready(function(){
 				borderTopLeftRadius: 100, 
 				borderTopRightRadius: 100, 
 				borderBottomLeftRadius: 100, 
-				borderBottomRightRadius: 100 })
+				borderBottomRightRadius: 100})
 			.animate({
 				borderTopLeftRadius: 0, 
 				borderTopRightRadius: 0, 
@@ -43,6 +43,7 @@ $(document).ready(function(){
 				left: '0%',
 				marginLeft:0
 			}, 600, "swing", function(){
+				$('#spinbox').css({"min-height": "900px"});
 				$('#spinner').animate({top:'20%'}, 300, "swing", function(){
 					showNav();
 					canShowNav = true;
@@ -54,6 +55,8 @@ $(document).ready(function(){
 					$("#titlebutton").animate({"opacity":"1"},100);
 					$(".fa").animate({"opacity":"1"},100);
 					
+					setupBubbles();
+					
 					$({someValue: 1}).animate({someValue: 0}, {
 						duration: 200,
 						step: function() { 
@@ -64,6 +67,21 @@ $(document).ready(function(){
 			});
 	}, 2000); 
 });
+
+//Ugly workaround, could be improved
+function setupBubbles(){
+	$(".ibubble").hover(function(){
+		$(this).find(".ibtext").css({
+			"font-size": "25px",
+			"font-family": "'Forum', cursive",
+			"text-shadow": "none"});
+	}, function(){
+		$(this).find(".ibtext").css({
+			"font-size": "40px",
+			"font-family": "'Arial Black', 'Archivo Black', 'Arial Bold', Gadget, sans-serif",
+			"text-shadow": "0px 0px 5px black"});
+	});
+}
 
 window.setInterval(function(){
 	scrollTop = $(window).scrollTop();
@@ -133,4 +151,26 @@ window.addEventListener('click', function(e){
     $("#form-main").animate({"opacity":"0"},100);
     $("#form-main").css({"z-index":"-1"});
   } 
+});
+
+var isBlack = false;
+$(window).scroll(function() {
+   //var hT = $('#search').offset().top;
+   //var hH = $('#search').outerHeight();
+   //var wH = $(window).height();
+   //var wS = $(this).scrollTop();
+   var p = $(this).scrollTop()/$(document).height();
+   if (p > 0.28 && p < 0.55){
+       if(!isBlack){
+		   $(".navdot").css({ borderTopColor: '#000000', borderLeftColor: '#000000', borderRightColor: '#000000', borderBottomColor: '#000000' });
+		   $(".navdot").addClass("black");
+		   isBlack = true;
+	   }
+   } else {
+		if(isBlack){
+			$(".navdot").css({ borderTopColor: '#FFFFFF', borderLeftColor: '#FFFFFF', borderRightColor: '#FFFFFF', borderBottomColor: '#FFFFFF' });
+		    $(".navdot").removeClass("black");
+			isBlack = false;
+	    }
+   } 
 });
